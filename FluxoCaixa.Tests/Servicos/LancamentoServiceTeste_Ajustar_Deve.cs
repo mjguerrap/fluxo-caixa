@@ -10,7 +10,7 @@ public class LancamentoServiceTeste_Ajustar_Deve : LancamentosFixture
 {
 
     [Fact]
-    public async Task Dado_AlterarLancamento_Quando_DadosLancamentoOk_Entao_SalvarEhChamado()
+    public async Task Dado_AlteracaoSolicitada_Quando_DadosDoPayloadOkELancamentoEncontrado_Entao_SalvarEhChamado()
     {
         //Adjust
         SetupData();
@@ -27,7 +27,7 @@ public class LancamentoServiceTeste_Ajustar_Deve : LancamentosFixture
     }
 
     [Fact]
-    public async Task Dado_AlterarLancamento_Quando_LancamentoNaoEncontrado_Entao_LancamentoNaoSalvo()
+    public async Task Dado_AlteracaoSolicitado_Quando_LancamentoNaoEncontrado_Entao_LancamentoNaoSalvo()
     {
         //Adjust
         SetupData();
@@ -46,7 +46,7 @@ public class LancamentoServiceTeste_Ajustar_Deve : LancamentosFixture
     [InlineData("", 0, 100, "O campo descrição deve estar preenchido.")]
     [InlineData("Lancamento", 5, 100,"O campo tipo do lançamento deve ser 0 (zero) para Débito ou 1 (um) para Crédito." )]
     [InlineData("Lancamento", 0, -100, "O campo valor não pode ser negativo.")]
-    public void Dado_AlterarLancamento_Quando_ComDadosErrados_Entao_ExcecaoComErroEhDisparada(string descricao, int tipoLancamento, decimal valor, string mensagemErro)
+    public void Dado_AlteracaoSolicitado_Quando_ComDadosDoPayloadErrados_Entao_ExcecaoComErroEhDisparada(string descricao, int tipoLancamento, decimal valor, string mensagemErro)
     {
         //Adjust
         SetupData();

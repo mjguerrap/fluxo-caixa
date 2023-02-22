@@ -2,7 +2,6 @@ using FluxoCaixa.DBContext;
 using FluxoCaixa.Model;
 using FluxoCaixa.Dominio;
 using Microsoft.EntityFrameworkCore;
-using System.Diagnostics.CodeAnalysis;
 
 namespace FluxoCaixa.Servicos;
 

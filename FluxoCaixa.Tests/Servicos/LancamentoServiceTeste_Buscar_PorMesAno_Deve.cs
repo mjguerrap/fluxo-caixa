@@ -9,7 +9,7 @@ namespace FluxoCaixa.Tests.Servicos;
 public class LancamentoServiceTeste_Buscar_PorMesAno_Deve : LancamentosFixture
 {
     [Fact]
-    public async Task Dado_BuscarLancamento_Quando_LancamentoEncontrado_Entao_LancamentoEhRetornado()
+    public async Task Dado_BuscarLancamentoPorMesAno_Quando_LancamentosEncontrados_Entao_LancamentosEhRetornado()
     {       
         //Adjust
         SetupData();
@@ -22,7 +22,7 @@ public class LancamentoServiceTeste_Buscar_PorMesAno_Deve : LancamentosFixture
     }
 
     [Fact]
-    public async Task Dado_BuscarLancamento_Quando_LancamentoNaoEncontrado_Entao_RetornaListaVazia()
+    public async Task Dado_BuscarLancamentoPorMesAno_Quando_LancamentoNaoEncontrado_Entao_RetornaListaVazia()
     {
         //Adjust
         SetupData();

@@ -8,7 +8,7 @@ public class ConsolidadoServiceTeste_ObtemConsolidadoDeve : LancamentosFixture
 {
 
     [Fact]
-    public async Task Dado_ExistiremLancamentosParaDoisDiasDoMes_Quando_ConsolidadoForChamdo_Entao_RetornarConsolidadoDeDoisDias()
+    public async Task Dado_SolicitacaoConsolidado_Quando_ExistiremLancamentosDeDoisDias_Entao_RetornarConsolidadoDeDoisDias()
     {
         //Adjust
         SetupData();
@@ -23,7 +23,7 @@ public class ConsolidadoServiceTeste_ObtemConsolidadoDeve : LancamentosFixture
     }
 
     [Fact]
-    public async Task Dado_NaoExistiremLancamentosNoMes_Quando_ConsolidadoForChamado_Entao_RetornarListaVazia()
+    public async Task Dado_ConsolidadoSolicitado_Quando_NaoExistiremLancamentos_Entao_RetornarListaVazia()
     {
         //Adjust
         SetupData();
