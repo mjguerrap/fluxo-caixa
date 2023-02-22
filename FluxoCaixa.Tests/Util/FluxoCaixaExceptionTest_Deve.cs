@@ -54,43 +54,4 @@ public class FluxoCaixaExceptionTest_Deve
         act.Should().Throw<FluxoCaixaException>().WithMessage(mensagemEsperada);
         act.Should().Throw<FluxoCaixaException>().WithInnerException<Exception>(mensagemInnerException, innerException);
     }
-
-    // [Fact]
-    // public void Dado_InstanciandoExcecao_Quando_PassadaMensagemEInnerExceptionESerialization_Entao_ExcecaoSemMensagem()
-    // {
-    //     //Arrange
-    //     var mensagemPassada = "mensagem passada";
-    //     var mensagemException = "ErroDesconhecido";
-    //     var mensagemEsperada = $"{mensagemException}: {mensagemPassada}";
-    //     var mensagemInnerException = "inner exception fake";
-    //     Exception innerException = new Exception(mensagemInnerException);
-    //     Exception exception = new Exception(mensagemException, innerException);
-        
-    //     //Act
-    //     Action act = () =>
-    //     {
-    //         try
-    //         {
-
-    //             throw exception;
-    //         }
-    //         catch (Exception ex)
-    //         {
-    //             CustomFormatConverter formatter = new CustomFormatConverter();
-    //             formatter.Convert(ex, typeof(Exception));
-    //             var serializationInfo = new SerializationInfo(typeof(CustomFormatConverter),formatter);
-    //             throw new FluxoCaixaException(serializationInfo, new StreamingContext(StreamingContextStates.Other,"teste"));
-    //         }
-    //     };
-    //     //Assert
-    //     act.Should().Throw<FluxoCaixaException>().WithMessage(mensagemEsperada);
-    //     act.Should().Throw<FluxoCaixaException>().WithInnerException<Exception>(mensagemInnerException, innerException);
-    // }
-
-    // public class CustomFormatConverter : FormatterConverter
-    // {
-    //     public CustomFormatConverter()
-    //     {
-    //     }
-    // }
 }
