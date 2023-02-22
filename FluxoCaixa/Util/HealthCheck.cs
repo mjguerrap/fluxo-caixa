@@ -1,4 +1,4 @@
-using FluxoCaixa.DB;
+using FluxoCaixa.DBContext;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 
 namespace FluxoCaixa.Util;

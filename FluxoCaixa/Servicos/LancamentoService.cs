@@ -1,4 +1,4 @@
-using FluxoCaixa.DB;
+using FluxoCaixa.DBContext;
 using FluxoCaixa.Model;
 using FluxoCaixa.Dominio;
 using Microsoft.EntityFrameworkCore;

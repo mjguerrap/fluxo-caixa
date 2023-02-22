@@ -1,8 +1,8 @@
 using FluentAssertions;
-using FluxoCaixa.DB;
+using FluxoCaixa.DBContext;
 using Microsoft.EntityFrameworkCore;
 
-namespace FluxoCaixa.Tests.DB;
+namespace FluxoCaixa.Tests.DBContext;
 public class FluxoCaixaContextTeste_Deve {
     [Fact]
     public void Dado_Instanciar_Quando_PassarDbContextOptionCorretamente_Entao_UmaInstanciaEhMontada (){

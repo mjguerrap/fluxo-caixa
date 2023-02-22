@@ -1,6 +1,6 @@
 
 using Moq;
-using FluxoCaixa.DB;
+using FluxoCaixa.DBContext;
 using FluxoCaixa.Servicos;
 using FluxoCaixa.Dominio;
 using Moq.EntityFrameworkCore;
