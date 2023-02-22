@@ -18,6 +18,6 @@ public class ConsolidadoService : IConsolidadoService
             Credito = x.Sum(x => x.TipoLancamento == TipoLancamento.Credito ? x.Valor : 0),
             Debito = x.Sum(x => x.TipoLancamento == TipoLancamento.Debito ? x.Valor : 0)
             }).ToList();
-        return retorno ?? new List<Consolidado>();
+        return retorno;
     }
 }

@@ -5,7 +5,7 @@ using FluxoCaixa.Dominio;
 using FluxoCaixa.Servicos;
 using FluxoCaixa.AppUtil;
 
-namespace FluxoCaixa.Tests.Servicos;
+namespace FluxoCaixa.Tests.TestesServicos;
 
 public class LancamentoServiceTeste_Novo_Deve : LancamentosFixture
 {

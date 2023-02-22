@@ -2,10 +2,8 @@ using Moq;
 using FluentAssertions;
 using FluxoCaixa.Tests.Fixture;
 using FluxoCaixa.Dominio;
-using FluxoCaixa.Servicos;
-using FluxoCaixa.AppUtil;
 
-namespace FluxoCaixa.Tests.Servicos;
+namespace FluxoCaixa.Tests.TestesServicos;
 
 public class LancamentoServiceTeste_Buscar_PorId_Deve : LancamentosFixture
 {

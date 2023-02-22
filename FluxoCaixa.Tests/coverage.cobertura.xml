@@ -1,168 +1,88 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.9681000000000001" branch-rate="0.8946999999999999" version="1.9" timestamp="1676839500" lines-covered="213" lines-valid="220" branches-covered="34" branches-valid="38">
+<coverage line-rate="0.9318000000000001" branch-rate="0.8611" version="1.9" timestamp="1677076933" lines-covered="205" lines-valid="220" branches-covered="31" branches-valid="36">
   <sources>
     <source>/Users/marcelopereira/Projetos/FluxoCaixaTeste/FluxoCaixa/</source>
   </sources>
   <packages>
-    <package name="FluxoCaixa" line-rate="0.9681000000000001" branch-rate="0.8946999999999999" complexity="77">
+    <package name="FluxoCaixa" line-rate="0.9318000000000001" branch-rate="0.8611" complexity="76">
       <classes>
-        <class name="FluxoCaixa.Program" filename="Program.cs" line-rate="0.8845999999999999" branch-rate="1" complexity="4">
+        <class name="FluxoCaixa.Program" filename="Program.cs" line-rate="1" branch-rate="1" complexity="4">
           <methods>
             <method name="Main" signature="(System.String[])" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="14" branch="False" />
-                <line number="15" hits="14" branch="False" />
-                <line number="16" hits="14" branch="False" />
-                <line number="17" hits="14" branch="False" />
+                <line number="14" hits="13" branch="False" />
+                <line number="17" hits="13" branch="False" />
+                <line number="18" hits="13" branch="False" />
+                <line number="19" hits="13" branch="False" />
               </lines>
             </method>
             <method name="Configuration" signature="(System.String[],Microsoft.AspNetCore.Builder.WebApplicationBuilder&amp;,System.String&amp;)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="14" branch="False" />
-                <line number="20" hits="14" branch="False" />
-                <line number="21" hits="14" branch="False" />
-                <line number="22" hits="14" branch="False" />
-                <line number="23" hits="14" branch="False" />
-                <line number="24" hits="14" branch="False" />
-                <line number="25" hits="14" branch="False" />
-                <line number="26" hits="14" branch="False" />
-                <line number="28" hits="14" branch="False" />
-                <line number="29" hits="14" branch="False" />
+                <line number="21" hits="13" branch="False" />
+                <line number="22" hits="13" branch="False" />
+                <line number="23" hits="13" branch="False" />
+                <line number="24" hits="13" branch="False" />
+                <line number="25" hits="13" branch="False" />
+                <line number="26" hits="13" branch="False" />
+                <line number="27" hits="13" branch="False" />
+                <line number="28" hits="13" branch="False" />
+                <line number="30" hits="13" branch="False" />
+                <line number="31" hits="13" branch="False" />
               </lines>
             </method>
             <method name="AppStart" signature="(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="32" hits="14" branch="False" />
-                <line number="33" hits="14" branch="False" />
-                <line number="34" hits="14" branch="False" />
-                <line number="35" hits="14" branch="False" />
-                <line number="37" hits="14" branch="False" />
-                <line number="38" hits="14" branch="False" />
-                <line number="39" hits="14" branch="False" />
-                <line number="40" hits="14" branch="False" />
-                <line number="41" hits="14" branch="False" />
+                <line number="34" hits="13" branch="False" />
+                <line number="35" hits="13" branch="False" />
+                <line number="36" hits="13" branch="False" />
+                <line number="37" hits="13" branch="False" />
+                <line number="39" hits="13" branch="False" />
+                <line number="40" hits="13" branch="False" />
+                <line number="41" hits="13" branch="False" />
+                <line number="42" hits="13" branch="False" />
+                <line number="43" hits="13" branch="False" />
               </lines>
             </method>
-            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="7" hits="0" branch="False" />
-                <line number="8" hits="0" branch="False" />
-                <line number="10" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="12" hits="14" branch="False" />
-            <line number="15" hits="14" branch="False" />
-            <line number="16" hits="14" branch="False" />
-            <line number="17" hits="14" branch="False" />
-            <line number="19" hits="14" branch="False" />
-            <line number="20" hits="14" branch="False" />
-            <line number="21" hits="14" branch="False" />
-            <line number="22" hits="14" branch="False" />
-            <line number="23" hits="14" branch="False" />
-            <line number="24" hits="14" branch="False" />
-            <line number="25" hits="14" branch="False" />
-            <line number="26" hits="14" branch="False" />
-            <line number="28" hits="14" branch="False" />
-            <line number="29" hits="14" branch="False" />
-            <line number="32" hits="14" branch="False" />
-            <line number="33" hits="14" branch="False" />
-            <line number="34" hits="14" branch="False" />
-            <line number="35" hits="14" branch="False" />
-            <line number="37" hits="14" branch="False" />
-            <line number="38" hits="14" branch="False" />
-            <line number="39" hits="14" branch="False" />
-            <line number="40" hits="14" branch="False" />
-            <line number="41" hits="14" branch="False" />
-            <line number="7" hits="0" branch="False" />
-            <line number="8" hits="0" branch="False" />
-            <line number="10" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="FluxoCaixa.Util.FluxoCaixaException" filename="Util/FluxoCaixaException.cs" line-rate="0.75" branch-rate="1" complexity="4">
-          <methods>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="3" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="8" hits="39" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="(System.String,System.Exception)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="9" hits="6" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="10" hits="0" branch="False" />
+                <line number="8" hits="2" branch="False" />
+                <line number="9" hits="2" branch="False" />
+                <line number="11" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="7" hits="3" branch="False" />
-            <line number="8" hits="39" branch="False" />
-            <line number="9" hits="6" branch="False" />
-            <line number="10" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="FluxoCaixa.Util.HealthCheck" filename="Util/HealthCheck.cs" line-rate="0.7857" branch-rate="0.5" complexity="3">
-          <methods>
-            <method name="CheckHealthAsync" signature="(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)" line-rate="0.7" branch-rate="0.5" complexity="2">
-              <lines>
-                <line number="15" hits="1" branch="False" />
-                <line number="16" hits="1" branch="False" />
-                <line number="19" hits="1" branch="True" condition-coverage="50% (1/2)">
-                  <conditions>
-                    <condition number="21" type="jump" coverage="50%" />
-                  </conditions>
-                </line>
-                <line number="20" hits="1" branch="False" />
-                <line number="21" hits="1" branch="False" />
-                <line number="22" hits="1" branch="False" />
-                <line number="25" hits="0" branch="False" />
-                <line number="26" hits="0" branch="False" />
-                <line number="27" hits="0" branch="False" />
-                <line number="28" hits="1" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="(FluxoCaixa.DB.FluxoCaixaContext)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="8" hits="1" branch="False" />
-                <line number="9" hits="1" branch="False" />
-                <line number="10" hits="1" branch="False" />
-                <line number="11" hits="1" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="15" hits="1" branch="False" />
-            <line number="16" hits="1" branch="False" />
-            <line number="19" hits="1" branch="True" condition-coverage="50% (1/2)">
-              <conditions>
-                <condition number="21" type="jump" coverage="50%" />
-              </conditions>
-            </line>
-            <line number="20" hits="1" branch="False" />
-            <line number="21" hits="1" branch="False" />
-            <line number="22" hits="1" branch="False" />
-            <line number="25" hits="0" branch="False" />
-            <line number="26" hits="0" branch="False" />
-            <line number="27" hits="0" branch="False" />
-            <line number="28" hits="1" branch="False" />
-            <line number="8" hits="1" branch="False" />
-            <line number="9" hits="1" branch="False" />
-            <line number="10" hits="1" branch="False" />
-            <line number="11" hits="1" branch="False" />
+            <line number="14" hits="13" branch="False" />
+            <line number="17" hits="13" branch="False" />
+            <line number="18" hits="13" branch="False" />
+            <line number="19" hits="13" branch="False" />
+            <line number="21" hits="13" branch="False" />
+            <line number="22" hits="13" branch="False" />
+            <line number="23" hits="13" branch="False" />
+            <line number="24" hits="13" branch="False" />
+            <line number="25" hits="13" branch="False" />
+            <line number="26" hits="13" branch="False" />
+            <line number="27" hits="13" branch="False" />
+            <line number="28" hits="13" branch="False" />
+            <line number="30" hits="13" branch="False" />
+            <line number="31" hits="13" branch="False" />
+            <line number="34" hits="13" branch="False" />
+            <line number="35" hits="13" branch="False" />
+            <line number="36" hits="13" branch="False" />
+            <line number="37" hits="13" branch="False" />
+            <line number="39" hits="13" branch="False" />
+            <line number="40" hits="13" branch="False" />
+            <line number="41" hits="13" branch="False" />
+            <line number="42" hits="13" branch="False" />
+            <line number="43" hits="13" branch="False" />
+            <line number="8" hits="2" branch="False" />
+            <line number="9" hits="2" branch="False" />
+            <line number="11" hits="2" branch="False" />
           </lines>
         </class>
         <class name="FluxoCaixa.Servicos.ConsolidadoService" filename="Servicos/ConsolidadoService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
-            <method name=".ctor" signature="(FluxoCaixa.DB.FluxoCaixaContext)" line-rate="1" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(FluxoCaixa.DBContext.FluxoCaixaContext)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
                 <line number="11" hits="44" branch="False" />
               </lines>
@@ -198,17 +118,13 @@
             <line number="20" hits="4" branch="False" />
           </lines>
         </class>
-        <class name="FluxoCaixa.Servicos.ConsolidadoService/&lt;ObtemConsolidado&gt;d__2" filename="Servicos/ConsolidadoService.cs" line-rate="1" branch-rate="0.5" complexity="2">
+        <class name="FluxoCaixa.Servicos.ConsolidadoService/&lt;ObtemConsolidado&gt;d__2" filename="Servicos/ConsolidadoService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="1" branch-rate="0.5" complexity="2">
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
                 <line number="13" hits="2" branch="False" />
                 <line number="14" hits="2" branch="False" />
-                <line number="21" hits="2" branch="True" condition-coverage="50% (1/2)">
-                  <conditions>
-                    <condition number="515" type="jump" coverage="50%" />
-                  </conditions>
-                </line>
+                <line number="21" hits="2" branch="False" />
                 <line number="22" hits="2" branch="False" />
               </lines>
             </method>
@@ -216,150 +132,146 @@
           <lines>
             <line number="13" hits="2" branch="False" />
             <line number="14" hits="2" branch="False" />
-            <line number="21" hits="2" branch="True" condition-coverage="50% (1/2)">
-              <conditions>
-                <condition number="515" type="jump" coverage="50%" />
-              </conditions>
-            </line>
+            <line number="21" hits="2" branch="False" />
             <line number="22" hits="2" branch="False" />
           </lines>
         </class>
         <class name="FluxoCaixa.Servicos.LancamentoService" filename="Servicos/LancamentoService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
-            <method name=".ctor" signature="(FluxoCaixa.DB.FluxoCaixaContext)" line-rate="1" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(FluxoCaixa.DBContext.FluxoCaixaContext)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="44" branch="False" />
+                <line number="12" hits="44" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="13" hits="44" branch="False" />
+            <line number="12" hits="44" branch="False" />
           </lines>
         </class>
         <class name="FluxoCaixa.Servicos.LancamentoService/&lt;Ajustar&gt;d__2" filename="Servicos/LancamentoService.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
+                <line number="15" hits="5" branch="False" />
                 <line number="16" hits="5" branch="False" />
-                <line number="17" hits="5" branch="False" />
-                <line number="18" hits="6" branch="True" condition-coverage="100% (2/2)">
+                <line number="17" hits="6" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="198" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="19" hits="4" branch="False" />
+                <line number="18" hits="4" branch="False" />
+                <line number="20" hits="1" branch="False" />
                 <line number="21" hits="1" branch="False" />
-                <line number="22" hits="1" branch="False" />
-                <line number="23" hits="2" branch="False" />
+                <line number="22" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
+            <line number="15" hits="5" branch="False" />
             <line number="16" hits="5" branch="False" />
-            <line number="17" hits="5" branch="False" />
-            <line number="18" hits="6" branch="True" condition-coverage="100% (2/2)">
+            <line number="17" hits="6" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="198" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="19" hits="4" branch="False" />
+            <line number="18" hits="4" branch="False" />
+            <line number="20" hits="1" branch="False" />
             <line number="21" hits="1" branch="False" />
-            <line number="22" hits="1" branch="False" />
-            <line number="23" hits="2" branch="False" />
+            <line number="22" hits="2" branch="False" />
           </lines>
         </class>
         <class name="FluxoCaixa.Servicos.LancamentoService/&lt;Buscar&gt;d__5" filename="Servicos/LancamentoService.cs" line-rate="1" branch-rate="0.5" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="0.5" complexity="2">
               <lines>
+                <line number="42" hits="2" branch="False" />
                 <line number="43" hits="2" branch="False" />
-                <line number="44" hits="2" branch="False" />
-                <line number="45" hits="2" branch="True" condition-coverage="50% (1/2)">
+                <line number="44" hits="2" branch="True" condition-coverage="50% (1/2)">
                   <conditions>
                     <condition number="87" type="jump" coverage="50%" />
                   </conditions>
                 </line>
+                <line number="45" hits="2" branch="False" />
                 <line number="46" hits="2" branch="False" />
-                <line number="47" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
+            <line number="42" hits="2" branch="False" />
             <line number="43" hits="2" branch="False" />
-            <line number="44" hits="2" branch="False" />
-            <line number="45" hits="2" branch="True" condition-coverage="50% (1/2)">
+            <line number="44" hits="2" branch="True" condition-coverage="50% (1/2)">
               <conditions>
                 <condition number="87" type="jump" coverage="50%" />
               </conditions>
             </line>
+            <line number="45" hits="2" branch="False" />
             <line number="46" hits="2" branch="False" />
-            <line number="47" hits="2" branch="False" />
           </lines>
         </class>
         <class name="FluxoCaixa.Servicos.LancamentoService/&lt;Buscar&gt;d__6" filename="Servicos/LancamentoService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="51" hits="2" branch="False" />
+                <line number="50" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="51" hits="2" branch="False" />
+            <line number="50" hits="2" branch="False" />
           </lines>
         </class>
         <class name="FluxoCaixa.Servicos.LancamentoService/&lt;Novo&gt;d__3" filename="Servicos/LancamentoService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
+                <line number="25" hits="9" branch="False" />
                 <line number="26" hits="9" branch="False" />
-                <line number="27" hits="9" branch="False" />
+                <line number="27" hits="2" branch="False" />
                 <line number="28" hits="2" branch="False" />
                 <line number="29" hits="2" branch="False" />
                 <line number="30" hits="2" branch="False" />
-                <line number="31" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
+            <line number="25" hits="9" branch="False" />
             <line number="26" hits="9" branch="False" />
-            <line number="27" hits="9" branch="False" />
+            <line number="27" hits="2" branch="False" />
             <line number="28" hits="2" branch="False" />
             <line number="29" hits="2" branch="False" />
             <line number="30" hits="2" branch="False" />
-            <line number="31" hits="2" branch="False" />
           </lines>
         </class>
         <class name="FluxoCaixa.Servicos.LancamentoService/&lt;Remover&gt;d__4" filename="Servicos/LancamentoService.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
+                <line number="32" hits="2" branch="False" />
                 <line number="33" hits="2" branch="False" />
-                <line number="34" hits="2" branch="False" />
-                <line number="35" hits="3" branch="True" condition-coverage="100% (2/2)">
+                <line number="34" hits="3" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="198" type="jump" coverage="100%" />
                   </conditions>
                 </line>
+                <line number="36" hits="1" branch="False" />
                 <line number="37" hits="1" branch="False" />
                 <line number="38" hits="1" branch="False" />
-                <line number="39" hits="1" branch="False" />
-                <line number="40" hits="2" branch="False" />
+                <line number="39" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
+            <line number="32" hits="2" branch="False" />
             <line number="33" hits="2" branch="False" />
-            <line number="34" hits="2" branch="False" />
-            <line number="35" hits="3" branch="True" condition-coverage="100% (2/2)">
+            <line number="34" hits="3" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="198" type="jump" coverage="100%" />
               </conditions>
             </line>
+            <line number="36" hits="1" branch="False" />
             <line number="37" hits="1" branch="False" />
             <line number="38" hits="1" branch="False" />
-            <line number="39" hits="1" branch="False" />
-            <line number="40" hits="2" branch="False" />
+            <line number="39" hits="2" branch="False" />
           </lines>
         </class>
         <class name="FluxoCaixa.Model.LancamentoPayload" filename="Model/LancamentoPayload.cs" line-rate="1" branch-rate="1" complexity="4">
@@ -390,326 +302,6 @@
             <line number="8" hits="46" branch="False" />
             <line number="9" hits="70" branch="False" />
             <line number="10" hits="46" branch="False" />
-          </lines>
-        </class>
-        <class name="FluxoCaixa.Extentions.AddCorsConfiguration" filename="Extentions/AddCorsConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
-          <methods>
-            <method name="AddCustomCors" signature="(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String&amp;)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="6" hits="14" branch="False" />
-                <line number="7" hits="14" branch="False" />
-                <line number="8" hits="14" branch="False" />
-                <line number="9" hits="14" branch="False" />
-                <line number="10" hits="14" branch="False" />
-                <line number="11" hits="14" branch="False" />
-                <line number="12" hits="14" branch="False" />
-                <line number="13" hits="14" branch="False" />
-                <line number="14" hits="14" branch="False" />
-                <line number="15" hits="28" branch="False" />
-                <line number="16" hits="28" branch="False" />
-                <line number="18" hits="14" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="6" hits="14" branch="False" />
-            <line number="7" hits="14" branch="False" />
-            <line number="8" hits="14" branch="False" />
-            <line number="9" hits="14" branch="False" />
-            <line number="10" hits="14" branch="False" />
-            <line number="11" hits="14" branch="False" />
-            <line number="12" hits="14" branch="False" />
-            <line number="13" hits="14" branch="False" />
-            <line number="14" hits="14" branch="False" />
-            <line number="15" hits="28" branch="False" />
-            <line number="16" hits="28" branch="False" />
-            <line number="18" hits="14" branch="False" />
-          </lines>
-        </class>
-        <class name="FluxoCaixa.Extentions.AddDbContextConfiguration" filename="Extentions/AddDbContextConfiguration.cs" line-rate="1" branch-rate="1" complexity="2">
-          <methods>
-            <method name="AddCustomDbContext" signature="(Microsoft.AspNetCore.Builder.WebApplicationBuilder)" line-rate="1" branch-rate="1" complexity="2">
-              <lines>
-                <line number="9" hits="14" branch="False" />
-                <line number="10" hits="14" branch="True" condition-coverage="100% (2/2)">
-                  <conditions>
-                    <condition number="25" type="jump" coverage="100%" />
-                  </conditions>
-                </line>
-                <line number="11" hits="15" branch="False" />
-                <line number="12" hits="14" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="9" hits="14" branch="False" />
-            <line number="10" hits="14" branch="True" condition-coverage="100% (2/2)">
-              <conditions>
-                <condition number="25" type="jump" coverage="100%" />
-              </conditions>
-            </line>
-            <line number="11" hits="15" branch="False" />
-            <line number="12" hits="14" branch="False" />
-          </lines>
-        </class>
-        <class name="FluxoCaixa.Extentions.AddDIConfiguration" filename="Extentions/AddDIConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
-          <methods>
-            <method name="AddDependencyInjection" signature="(Microsoft.Extensions.DependencyInjection.IServiceCollection)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="7" hits="14" branch="False" />
-                <line number="8" hits="14" branch="False" />
-                <line number="9" hits="14" branch="False" />
-                <line number="10" hits="14" branch="False" />
-                <line number="11" hits="14" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="7" hits="14" branch="False" />
-            <line number="8" hits="14" branch="False" />
-            <line number="9" hits="14" branch="False" />
-            <line number="10" hits="14" branch="False" />
-            <line number="11" hits="14" branch="False" />
-          </lines>
-        </class>
-        <class name="FluxoCaixa.Extentions.AddSwaggerGenConfiguration" filename="Extentions/AddSwaggerGenConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
-          <methods>
-            <method name="AddCustomSwaggerGen" signature="(Microsoft.Extensions.DependencyInjection.IServiceCollection)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="9" hits="14" branch="False" />
-                <line number="10" hits="14" branch="False" />
-                <line number="11" hits="14" branch="False" />
-                <line number="12" hits="14" branch="False" />
-                <line number="13" hits="14" branch="False" />
-                <line number="14" hits="14" branch="False" />
-                <line number="15" hits="14" branch="False" />
-                <line number="16" hits="14" branch="False" />
-                <line number="17" hits="14" branch="False" />
-                <line number="18" hits="14" branch="False" />
-                <line number="19" hits="14" branch="False" />
-                <line number="20" hits="28" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="9" hits="14" branch="False" />
-            <line number="10" hits="14" branch="False" />
-            <line number="11" hits="14" branch="False" />
-            <line number="12" hits="14" branch="False" />
-            <line number="13" hits="14" branch="False" />
-            <line number="14" hits="14" branch="False" />
-            <line number="15" hits="14" branch="False" />
-            <line number="16" hits="14" branch="False" />
-            <line number="17" hits="14" branch="False" />
-            <line number="18" hits="14" branch="False" />
-            <line number="19" hits="14" branch="False" />
-            <line number="20" hits="28" branch="False" />
-          </lines>
-        </class>
-        <class name="FluxoCaixa.Extentions.AddVersioningConfiguration" filename="Extentions/AddVersioningConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
-          <methods>
-            <method name="AddCustomApiVersioning" signature="(Microsoft.Extensions.DependencyInjection.IServiceCollection)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="8" hits="14" branch="False" />
-                <line number="9" hits="14" branch="False" />
-                <line number="10" hits="14" branch="False" />
-                <line number="11" hits="14" branch="False" />
-                <line number="12" hits="14" branch="False" />
-                <line number="13" hits="14" branch="False" />
-                <line number="14" hits="28" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="8" hits="14" branch="False" />
-            <line number="9" hits="14" branch="False" />
-            <line number="10" hits="14" branch="False" />
-            <line number="11" hits="14" branch="False" />
-            <line number="12" hits="14" branch="False" />
-            <line number="13" hits="14" branch="False" />
-            <line number="14" hits="28" branch="False" />
-          </lines>
-        </class>
-        <class name="FluxoCaixa.Extentions.ApiExceptionHandler" filename="Extentions/ApiExceptionHandler.cs" line-rate="1" branch-rate="1" complexity="1">
-          <methods>
-            <method name="AddCustomExceptionHandler" signature="(Microsoft.AspNetCore.Builder.WebApplication)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="10" hits="14" branch="False" />
-                <line number="11" hits="14" branch="False" />
-                <line number="12" hits="14" branch="False" />
-                <line number="13" hits="3" branch="False" />
-                <line number="14" hits="3" branch="False" />
-                <line number="15" hits="14" branch="False" />
-                <line number="16" hits="3" branch="False" />
-                <line number="17" hits="14" branch="False" />
-                <line number="18" hits="3" branch="False" />
-                <line number="19" hits="3" branch="False" />
-                <line number="20" hits="14" branch="False" />
-                <line number="21" hits="3" branch="False" />
-                <line number="22" hits="2" branch="False" />
-                <line number="23" hits="2" branch="False" />
-                <line number="24" hits="2" branch="False" />
-                <line number="25" hits="14" branch="False" />
-                <line number="26" hits="1" branch="False" />
-                <line number="27" hits="1" branch="False" />
-                <line number="28" hits="1" branch="False" />
-                <line number="29" hits="17" branch="False" />
-                <line number="30" hits="28" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="10" hits="14" branch="False" />
-            <line number="11" hits="14" branch="False" />
-            <line number="12" hits="14" branch="False" />
-            <line number="13" hits="3" branch="False" />
-            <line number="14" hits="3" branch="False" />
-            <line number="15" hits="14" branch="False" />
-            <line number="16" hits="3" branch="False" />
-            <line number="17" hits="14" branch="False" />
-            <line number="18" hits="3" branch="False" />
-            <line number="19" hits="3" branch="False" />
-            <line number="20" hits="14" branch="False" />
-            <line number="21" hits="3" branch="False" />
-            <line number="22" hits="2" branch="False" />
-            <line number="23" hits="2" branch="False" />
-            <line number="24" hits="2" branch="False" />
-            <line number="25" hits="14" branch="False" />
-            <line number="26" hits="1" branch="False" />
-            <line number="27" hits="1" branch="False" />
-            <line number="28" hits="1" branch="False" />
-            <line number="29" hits="17" branch="False" />
-            <line number="30" hits="28" branch="False" />
-          </lines>
-        </class>
-        <class name="FluxoCaixa.Extentions.ApiExceptionHandler/&lt;&gt;c/&lt;&lt;AddCustomExceptionHandler&gt;b__0_1&gt;d" filename="Extentions/ApiExceptionHandler.cs" line-rate="1" branch-rate="0.75" complexity="4">
-          <methods />
-          <lines />
-        </class>
-        <class name="FluxoCaixa.Extentions.ApiMapping" filename="Extentions/ApiMapping.cs" line-rate="1" branch-rate="1" complexity="1">
-          <methods>
-            <method name="APIMapping" signature="(Microsoft.AspNetCore.Builder.WebApplication)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="12" hits="14" branch="False" />
-                <line number="13" hits="14" branch="False" />
-                <line number="14" hits="14" branch="False" />
-                <line number="15" hits="14" branch="False" />
-                <line number="16" hits="14" branch="False" />
-                <line number="18" hits="15" branch="False" />
-                <line number="20" hits="14" branch="False" />
-                <line number="21" hits="14" branch="False" />
-                <line number="23" hits="16" branch="False" />
-                <line number="24" hits="2" branch="False" />
-                <line number="25" hits="2" branch="False" />
-                <line number="26" hits="2" branch="False" />
-                <line number="27" hits="14" branch="False" />
-                <line number="29" hits="16" branch="False" />
-                <line number="30" hits="2" branch="False" />
-                <line number="31" hits="2" branch="False" />
-                <line number="32" hits="16" branch="False" />
-                <line number="34" hits="14" branch="False" />
-                <line number="35" hits="2" branch="False" />
-                <line number="36" hits="2" branch="False" />
-                <line number="37" hits="1" branch="False" />
-                <line number="38" hits="1" branch="False" />
-                <line number="39" hits="14" branch="False" />
-                <line number="41" hits="14" branch="False" />
-                <line number="42" hits="3" branch="False" />
-                <line number="43" hits="3" branch="False" />
-                <line number="44" hits="2" branch="False" />
-                <line number="45" hits="2" branch="False" />
-                <line number="46" hits="14" branch="False" />
-                <line number="47" hits="14" branch="False" />
-                <line number="49" hits="14" branch="False" />
-                <line number="50" hits="3" branch="False" />
-                <line number="51" hits="3" branch="False" />
-                <line number="52" hits="2" branch="False" />
-                <line number="53" hits="16" branch="False" />
-                <line number="55" hits="14" branch="False" />
-                <line number="56" hits="14" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="12" hits="14" branch="False" />
-            <line number="13" hits="14" branch="False" />
-            <line number="14" hits="14" branch="False" />
-            <line number="15" hits="14" branch="False" />
-            <line number="16" hits="14" branch="False" />
-            <line number="18" hits="15" branch="False" />
-            <line number="20" hits="14" branch="False" />
-            <line number="21" hits="14" branch="False" />
-            <line number="23" hits="16" branch="False" />
-            <line number="24" hits="2" branch="False" />
-            <line number="25" hits="2" branch="False" />
-            <line number="26" hits="2" branch="False" />
-            <line number="27" hits="14" branch="False" />
-            <line number="29" hits="16" branch="False" />
-            <line number="30" hits="2" branch="False" />
-            <line number="31" hits="2" branch="False" />
-            <line number="32" hits="16" branch="False" />
-            <line number="34" hits="14" branch="False" />
-            <line number="35" hits="2" branch="False" />
-            <line number="36" hits="2" branch="False" />
-            <line number="37" hits="1" branch="False" />
-            <line number="38" hits="1" branch="False" />
-            <line number="39" hits="14" branch="False" />
-            <line number="41" hits="14" branch="False" />
-            <line number="42" hits="3" branch="False" />
-            <line number="43" hits="3" branch="False" />
-            <line number="44" hits="2" branch="False" />
-            <line number="45" hits="2" branch="False" />
-            <line number="46" hits="14" branch="False" />
-            <line number="47" hits="14" branch="False" />
-            <line number="49" hits="14" branch="False" />
-            <line number="50" hits="3" branch="False" />
-            <line number="51" hits="3" branch="False" />
-            <line number="52" hits="2" branch="False" />
-            <line number="53" hits="16" branch="False" />
-            <line number="55" hits="14" branch="False" />
-            <line number="56" hits="14" branch="False" />
-          </lines>
-        </class>
-        <class name="FluxoCaixa.Extentions.ApiMapping/&lt;&gt;c/&lt;&lt;APIMapping&gt;b__0_2&gt;d" filename="Extentions/ApiMapping.cs" line-rate="1" branch-rate="1" complexity="2">
-          <methods />
-          <lines />
-        </class>
-        <class name="FluxoCaixa.Extentions.ApiMapping/&lt;&gt;c/&lt;&lt;APIMapping&gt;b__0_3&gt;d" filename="Extentions/ApiMapping.cs" line-rate="1" branch-rate="1" complexity="2">
-          <methods />
-          <lines />
-        </class>
-        <class name="FluxoCaixa.Extentions.ApiMapping/&lt;&gt;c/&lt;&lt;APIMapping&gt;b__0_5&gt;d" filename="Extentions/ApiMapping.cs" line-rate="1" branch-rate="1" complexity="2">
-          <methods />
-          <lines />
-        </class>
-        <class name="FluxoCaixa.Extentions.ApiMapping/&lt;&gt;c/&lt;&lt;APIMapping&gt;b__0_6&gt;d" filename="Extentions/ApiMapping.cs" line-rate="1" branch-rate="1" complexity="2">
-          <methods />
-          <lines />
-        </class>
-        <class name="FluxoCaixa.Extentions.AppUseSwagger" filename="Extentions/AppUseSwagger.cs" line-rate="1" branch-rate="1" complexity="1">
-          <methods>
-            <method name="UseSwaggerConfiguration" signature="(Microsoft.AspNetCore.Builder.WebApplication)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="6" hits="14" branch="False" />
-                <line number="7" hits="14" branch="False" />
-                <line number="8" hits="14" branch="False" />
-                <line number="9" hits="14" branch="False" />
-                <line number="10" hits="14" branch="False" />
-                <line number="11" hits="28" branch="False" />
-                <line number="12" hits="14" branch="False" />
-                <line number="13" hits="14" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="6" hits="14" branch="False" />
-            <line number="7" hits="14" branch="False" />
-            <line number="8" hits="14" branch="False" />
-            <line number="9" hits="14" branch="False" />
-            <line number="10" hits="14" branch="False" />
-            <line number="11" hits="28" branch="False" />
-            <line number="12" hits="14" branch="False" />
-            <line number="13" hits="14" branch="False" />
           </lines>
         </class>
         <class name="FluxoCaixa.Dominio.Consolidado" filename="Dominio/Consolidado.cs" line-rate="1" branch-rate="1" complexity="4">
@@ -852,11 +444,11 @@
             <line number="17" hits="167" branch="False" />
           </lines>
         </class>
-        <class name="FluxoCaixa.DB.FluxoCaixaContext" filename="DB/FluxoCaixaContext.cs" line-rate="1" branch-rate="1" complexity="3">
+        <class name="FluxoCaixa.DBContext.FluxoCaixaContext" filename="DBContext/FluxoCaixaContext.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="get_Lancamentos" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="26" branch="False" />
+                <line number="9" hits="24" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -866,14 +458,414 @@
             </method>
             <method name=".ctor" signature="(Microsoft.EntityFrameworkCore.DbContextOptions)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="6" branch="False" />
+                <line number="8" hits="3" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="26" branch="False" />
+            <line number="9" hits="24" branch="False" />
             <line number="7" hits="66" branch="False" />
-            <line number="8" hits="6" branch="False" />
+            <line number="8" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="FluxoCaixa.AppUtil.FluxoCaixaException" filename="AppUtil/FluxoCaixaException.cs" line-rate="0.75" branch-rate="1" complexity="4">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="39" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.Exception)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="3" branch="False" />
+            <line number="9" hits="39" branch="False" />
+            <line number="10" hits="6" branch="False" />
+            <line number="11" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="FluxoCaixa.AppUtil.HealthCheck" filename="AppUtil/HealthCheck.cs" line-rate="0" branch-rate="0" complexity="3">
+          <methods>
+            <method name="CheckHealthAsync" signature="(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="19" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="21" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(FluxoCaixa.DBContext.FluxoCaixaContext)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="0" branch="False" />
+                <line number="9" hits="0" branch="False" />
+                <line number="10" hits="0" branch="False" />
+                <line number="11" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="19" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="21" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="8" hits="0" branch="False" />
+            <line number="9" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="FluxoCaixa.AppExtentions.AddCorsConfiguration" filename="AppExtentions/AddCorsConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="AddCustomCors" signature="(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String&amp;)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="13" branch="False" />
+                <line number="7" hits="13" branch="False" />
+                <line number="8" hits="13" branch="False" />
+                <line number="9" hits="13" branch="False" />
+                <line number="10" hits="13" branch="False" />
+                <line number="11" hits="13" branch="False" />
+                <line number="12" hits="13" branch="False" />
+                <line number="13" hits="13" branch="False" />
+                <line number="14" hits="13" branch="False" />
+                <line number="15" hits="26" branch="False" />
+                <line number="16" hits="26" branch="False" />
+                <line number="18" hits="13" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="6" hits="13" branch="False" />
+            <line number="7" hits="13" branch="False" />
+            <line number="8" hits="13" branch="False" />
+            <line number="9" hits="13" branch="False" />
+            <line number="10" hits="13" branch="False" />
+            <line number="11" hits="13" branch="False" />
+            <line number="12" hits="13" branch="False" />
+            <line number="13" hits="13" branch="False" />
+            <line number="14" hits="13" branch="False" />
+            <line number="15" hits="26" branch="False" />
+            <line number="16" hits="26" branch="False" />
+            <line number="18" hits="13" branch="False" />
+          </lines>
+        </class>
+        <class name="FluxoCaixa.AppExtentions.AddDbContextConfiguration" filename="AppExtentions/AddDbContextConfiguration.cs" line-rate="1" branch-rate="0.5" complexity="2">
+          <methods>
+            <method name="AddCustomDbContext" signature="(Microsoft.AspNetCore.Builder.WebApplicationBuilder)" line-rate="1" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="9" hits="13" branch="False" />
+                <line number="10" hits="13" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="25" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="11" hits="13" branch="False" />
+                <line number="12" hits="13" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="13" branch="False" />
+            <line number="10" hits="13" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="25" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="11" hits="13" branch="False" />
+            <line number="12" hits="13" branch="False" />
+          </lines>
+        </class>
+        <class name="FluxoCaixa.AppExtentions.AddDIConfiguration" filename="AppExtentions/AddDIConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="AddDependencyInjection" signature="(Microsoft.Extensions.DependencyInjection.IServiceCollection)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="13" branch="False" />
+                <line number="8" hits="13" branch="False" />
+                <line number="9" hits="13" branch="False" />
+                <line number="10" hits="13" branch="False" />
+                <line number="11" hits="13" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="13" branch="False" />
+            <line number="8" hits="13" branch="False" />
+            <line number="9" hits="13" branch="False" />
+            <line number="10" hits="13" branch="False" />
+            <line number="11" hits="13" branch="False" />
+          </lines>
+        </class>
+        <class name="FluxoCaixa.AppExtentions.AddSwaggerGenConfiguration" filename="AppExtentions/AddSwaggerGenConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="AddCustomSwaggerGen" signature="(Microsoft.Extensions.DependencyInjection.IServiceCollection)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="13" branch="False" />
+                <line number="10" hits="13" branch="False" />
+                <line number="11" hits="13" branch="False" />
+                <line number="12" hits="13" branch="False" />
+                <line number="13" hits="13" branch="False" />
+                <line number="14" hits="13" branch="False" />
+                <line number="15" hits="13" branch="False" />
+                <line number="16" hits="13" branch="False" />
+                <line number="17" hits="13" branch="False" />
+                <line number="18" hits="13" branch="False" />
+                <line number="19" hits="13" branch="False" />
+                <line number="20" hits="26" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="13" branch="False" />
+            <line number="10" hits="13" branch="False" />
+            <line number="11" hits="13" branch="False" />
+            <line number="12" hits="13" branch="False" />
+            <line number="13" hits="13" branch="False" />
+            <line number="14" hits="13" branch="False" />
+            <line number="15" hits="13" branch="False" />
+            <line number="16" hits="13" branch="False" />
+            <line number="17" hits="13" branch="False" />
+            <line number="18" hits="13" branch="False" />
+            <line number="19" hits="13" branch="False" />
+            <line number="20" hits="26" branch="False" />
+          </lines>
+        </class>
+        <class name="FluxoCaixa.AppExtentions.AddVersioningConfiguration" filename="AppExtentions/AddVersioningConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="AddCustomApiVersioning" signature="(Microsoft.Extensions.DependencyInjection.IServiceCollection)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="13" branch="False" />
+                <line number="9" hits="13" branch="False" />
+                <line number="10" hits="13" branch="False" />
+                <line number="11" hits="13" branch="False" />
+                <line number="12" hits="13" branch="False" />
+                <line number="13" hits="13" branch="False" />
+                <line number="14" hits="26" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="13" branch="False" />
+            <line number="9" hits="13" branch="False" />
+            <line number="10" hits="13" branch="False" />
+            <line number="11" hits="13" branch="False" />
+            <line number="12" hits="13" branch="False" />
+            <line number="13" hits="13" branch="False" />
+            <line number="14" hits="26" branch="False" />
+          </lines>
+        </class>
+        <class name="FluxoCaixa.AppExtentions.ApiExceptionHandler" filename="AppExtentions/ApiExceptionHandler.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="AddCustomExceptionHandler" signature="(Microsoft.AspNetCore.Builder.WebApplication)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="13" branch="False" />
+                <line number="11" hits="13" branch="False" />
+                <line number="12" hits="13" branch="False" />
+                <line number="13" hits="3" branch="False" />
+                <line number="14" hits="3" branch="False" />
+                <line number="15" hits="13" branch="False" />
+                <line number="16" hits="3" branch="False" />
+                <line number="17" hits="13" branch="False" />
+                <line number="18" hits="3" branch="False" />
+                <line number="19" hits="3" branch="False" />
+                <line number="20" hits="13" branch="False" />
+                <line number="21" hits="3" branch="False" />
+                <line number="22" hits="2" branch="False" />
+                <line number="23" hits="2" branch="False" />
+                <line number="24" hits="2" branch="False" />
+                <line number="25" hits="13" branch="False" />
+                <line number="26" hits="1" branch="False" />
+                <line number="27" hits="1" branch="False" />
+                <line number="28" hits="1" branch="False" />
+                <line number="29" hits="16" branch="False" />
+                <line number="30" hits="26" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="13" branch="False" />
+            <line number="11" hits="13" branch="False" />
+            <line number="12" hits="13" branch="False" />
+            <line number="13" hits="3" branch="False" />
+            <line number="14" hits="3" branch="False" />
+            <line number="15" hits="13" branch="False" />
+            <line number="16" hits="3" branch="False" />
+            <line number="17" hits="13" branch="False" />
+            <line number="18" hits="3" branch="False" />
+            <line number="19" hits="3" branch="False" />
+            <line number="20" hits="13" branch="False" />
+            <line number="21" hits="3" branch="False" />
+            <line number="22" hits="2" branch="False" />
+            <line number="23" hits="2" branch="False" />
+            <line number="24" hits="2" branch="False" />
+            <line number="25" hits="13" branch="False" />
+            <line number="26" hits="1" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="28" hits="1" branch="False" />
+            <line number="29" hits="16" branch="False" />
+            <line number="30" hits="26" branch="False" />
+          </lines>
+        </class>
+        <class name="FluxoCaixa.AppExtentions.ApiExceptionHandler/&lt;&gt;c/&lt;&lt;AddCustomExceptionHandler&gt;b__0_1&gt;d" filename="AppExtentions/ApiExceptionHandler.cs" line-rate="1" branch-rate="0.75" complexity="4">
+          <methods />
+          <lines />
+        </class>
+        <class name="FluxoCaixa.AppExtentions.ApiMapping" filename="AppExtentions/ApiMapping.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="APIMapping" signature="(Microsoft.AspNetCore.Builder.WebApplication)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="13" branch="False" />
+                <line number="13" hits="13" branch="False" />
+                <line number="14" hits="13" branch="False" />
+                <line number="15" hits="13" branch="False" />
+                <line number="16" hits="13" branch="False" />
+                <line number="18" hits="14" branch="False" />
+                <line number="20" hits="13" branch="False" />
+                <line number="21" hits="13" branch="False" />
+                <line number="23" hits="15" branch="False" />
+                <line number="24" hits="2" branch="False" />
+                <line number="25" hits="2" branch="False" />
+                <line number="26" hits="2" branch="False" />
+                <line number="27" hits="13" branch="False" />
+                <line number="29" hits="15" branch="False" />
+                <line number="30" hits="2" branch="False" />
+                <line number="31" hits="2" branch="False" />
+                <line number="32" hits="15" branch="False" />
+                <line number="34" hits="13" branch="False" />
+                <line number="35" hits="2" branch="False" />
+                <line number="36" hits="2" branch="False" />
+                <line number="37" hits="1" branch="False" />
+                <line number="38" hits="1" branch="False" />
+                <line number="39" hits="13" branch="False" />
+                <line number="41" hits="13" branch="False" />
+                <line number="42" hits="3" branch="False" />
+                <line number="43" hits="3" branch="False" />
+                <line number="44" hits="2" branch="False" />
+                <line number="45" hits="2" branch="False" />
+                <line number="46" hits="13" branch="False" />
+                <line number="47" hits="13" branch="False" />
+                <line number="49" hits="13" branch="False" />
+                <line number="50" hits="3" branch="False" />
+                <line number="51" hits="3" branch="False" />
+                <line number="52" hits="2" branch="False" />
+                <line number="53" hits="15" branch="False" />
+                <line number="55" hits="13" branch="False" />
+                <line number="56" hits="13" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="13" branch="False" />
+            <line number="13" hits="13" branch="False" />
+            <line number="14" hits="13" branch="False" />
+            <line number="15" hits="13" branch="False" />
+            <line number="16" hits="13" branch="False" />
+            <line number="18" hits="14" branch="False" />
+            <line number="20" hits="13" branch="False" />
+            <line number="21" hits="13" branch="False" />
+            <line number="23" hits="15" branch="False" />
+            <line number="24" hits="2" branch="False" />
+            <line number="25" hits="2" branch="False" />
+            <line number="26" hits="2" branch="False" />
+            <line number="27" hits="13" branch="False" />
+            <line number="29" hits="15" branch="False" />
+            <line number="30" hits="2" branch="False" />
+            <line number="31" hits="2" branch="False" />
+            <line number="32" hits="15" branch="False" />
+            <line number="34" hits="13" branch="False" />
+            <line number="35" hits="2" branch="False" />
+            <line number="36" hits="2" branch="False" />
+            <line number="37" hits="1" branch="False" />
+            <line number="38" hits="1" branch="False" />
+            <line number="39" hits="13" branch="False" />
+            <line number="41" hits="13" branch="False" />
+            <line number="42" hits="3" branch="False" />
+            <line number="43" hits="3" branch="False" />
+            <line number="44" hits="2" branch="False" />
+            <line number="45" hits="2" branch="False" />
+            <line number="46" hits="13" branch="False" />
+            <line number="47" hits="13" branch="False" />
+            <line number="49" hits="13" branch="False" />
+            <line number="50" hits="3" branch="False" />
+            <line number="51" hits="3" branch="False" />
+            <line number="52" hits="2" branch="False" />
+            <line number="53" hits="15" branch="False" />
+            <line number="55" hits="13" branch="False" />
+            <line number="56" hits="13" branch="False" />
+          </lines>
+        </class>
+        <class name="FluxoCaixa.AppExtentions.ApiMapping/&lt;&gt;c/&lt;&lt;APIMapping&gt;b__0_2&gt;d" filename="AppExtentions/ApiMapping.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods />
+          <lines />
+        </class>
+        <class name="FluxoCaixa.AppExtentions.ApiMapping/&lt;&gt;c/&lt;&lt;APIMapping&gt;b__0_3&gt;d" filename="AppExtentions/ApiMapping.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods />
+          <lines />
+        </class>
+        <class name="FluxoCaixa.AppExtentions.ApiMapping/&lt;&gt;c/&lt;&lt;APIMapping&gt;b__0_5&gt;d" filename="AppExtentions/ApiMapping.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods />
+          <lines />
+        </class>
+        <class name="FluxoCaixa.AppExtentions.ApiMapping/&lt;&gt;c/&lt;&lt;APIMapping&gt;b__0_6&gt;d" filename="AppExtentions/ApiMapping.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods />
+          <lines />
+        </class>
+        <class name="FluxoCaixa.AppExtentions.AppUseSwagger" filename="AppExtentions/AppUseSwagger.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="UseSwaggerConfiguration" signature="(Microsoft.AspNetCore.Builder.WebApplication)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="13" branch="False" />
+                <line number="7" hits="13" branch="False" />
+                <line number="8" hits="13" branch="False" />
+                <line number="9" hits="13" branch="False" />
+                <line number="10" hits="13" branch="False" />
+                <line number="11" hits="26" branch="False" />
+                <line number="12" hits="13" branch="False" />
+                <line number="13" hits="13" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="6" hits="13" branch="False" />
+            <line number="7" hits="13" branch="False" />
+            <line number="8" hits="13" branch="False" />
+            <line number="9" hits="13" branch="False" />
+            <line number="10" hits="13" branch="False" />
+            <line number="11" hits="26" branch="False" />
+            <line number="12" hits="13" branch="False" />
+            <line number="13" hits="13" branch="False" />
           </lines>
         </class>
       </classes>

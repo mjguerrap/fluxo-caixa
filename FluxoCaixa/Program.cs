@@ -1,5 +1,6 @@
 using FluxoCaixa.AppExtentions;
 using FluxoCaixa.AppUtil;
+
 namespace FluxoCaixa;
 
 public class Program
@@ -8,6 +9,7 @@ public class Program
     {
         
     }
+
     public static void Main(string[] args)
     {
         WebApplicationBuilder builder;

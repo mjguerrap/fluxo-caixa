@@ -1,10 +1,8 @@
 using Moq;
 using FluentAssertions;
 using FluxoCaixa.Tests.Fixture;
-using FluxoCaixa.Dominio;
-using Moq.EntityFrameworkCore;
 
-namespace FluxoCaixa.Tests.Servicos;
+namespace FluxoCaixa.Tests.TestesServicos;
 
 public class LancamentoServiceTeste_Buscar_PorMesAno_Deve : LancamentosFixture
 {

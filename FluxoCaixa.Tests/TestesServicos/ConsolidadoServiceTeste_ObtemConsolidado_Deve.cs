@@ -2,7 +2,7 @@
 using FluentAssertions;
 using FluxoCaixa.Tests.Fixture;
 
-namespace FluxoCaixa.Tests.Servicos;
+namespace FluxoCaixa.Tests.TestesServicos;
 
 public class ConsolidadoServiceTeste_ObtemConsolidadoDeve : LancamentosFixture
 {
@@ -10,8 +10,9 @@ public class ConsolidadoServiceTeste_ObtemConsolidadoDeve : LancamentosFixture
     [Fact]
     public async Task Dado_SolicitacaoConsolidado_Quando_ExistiremLancamentosDeDoisDias_Entao_RetornarConsolidadoDeDoisDias()
     {
-        //Adjust
+        //Arrange
         SetupData();
+        FluxoCaixaContextMock.Setup(x => x.Database.CanConnect()).Returns(false);
         // Act
         var result = await ConsolidadoService!.ObtemConsolidado(2, 2023)!;
 

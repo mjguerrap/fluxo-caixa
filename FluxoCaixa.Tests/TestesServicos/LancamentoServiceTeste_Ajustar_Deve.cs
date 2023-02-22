@@ -4,7 +4,7 @@ using FluxoCaixa.Dominio;
 using FluentAssertions;
 using FluxoCaixa.AppUtil;
 
-namespace FluxoCaixa.Tests.Servicos;
+namespace FluxoCaixa.Tests.TestesServicos;
 
 public class LancamentoServiceTeste_Ajustar_Deve : LancamentosFixture
 {

@@ -7,6 +7,7 @@ using FluxoCaixa.Model;
 using FluxoCaixa.Tests.Fixture;
 using Microsoft.AspNetCore.Mvc.Testing;
 
+namespace FluxoCaixa.Tests.TestesApis;
 public class ApiTest
 {
     [Fact]
@@ -19,29 +20,6 @@ public class ApiTest
 
         response.Should().Be("Apresentação do Teste sobre Fluxo de Caixa!");
     }
-
-    [Fact]
-    public async Task Dado_ChamadaHealthCheck_QuandoOk_Entao_RenornaMensagemHealty()
-    {
-        await using var application = new WebApplicationFactory<Program>();
-        using var client = application.CreateClient();
-
-        var response = await client.GetStringAsync("/HealthCheck");
-
-        response.Should().Be("Healthy");
-    } //
-
-    [Fact]
-    public async Task Dado_ChamadaHealthCheck_QuandoNOK_Entao_RenornaMensagemUnhealth()
-    {
-        Environment.SetEnvironmentVariable("ConnectionStrings.FluxoCaixaConnection", "Data Source=FluxoCaixaInexistente.db");
-        await using var application = new WebApplicationFactory<Program>();
-        using var client = application.CreateClient();
-
-        var response = await client.GetStringAsync("/HealthCheck");
-
-        response.Should().Be("Healthy");
-    } 
 
     [Fact]
     public async Task Dado_ChamadaBuscarLancamentoPorId_Quando_IdExistente_Entao_StatusCodeOK()

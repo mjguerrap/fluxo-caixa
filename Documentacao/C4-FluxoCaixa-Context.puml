@@ -1,0 +1,13 @@
+@startuml C4_Elements
+    !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+    Person(comerciante, "Comerciante", "Gestor do comércio")
+    Container(spa_angular, "SPA", "angular ou react etc", "Interface principal que irá consumir as APIs")
+    System_Boundary(web_api, "FluxoCaixa") {    
+        System(microservico_fluxo_caixa, "Microserviço Fluxo de caixa", "Microservico que permite a gestão do fluxo de caixa, e a visão do seu consolidado.")
+    }
+    System(sistemaFluxoCaixa, "Sistema Fluxo de Caixa", "")
+
+    Rel(comerciante, spa_angular, "controla através do", "FLUXO DE CAIXA")
+    Rel(spa_angular, microservico_fluxo_caixa, "controla através do", "FLUXO DE CAIXA")
+@enduml

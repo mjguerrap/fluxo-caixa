@@ -1,7 +1,7 @@
 using System.Data.Entity.Infrastructure;
 using System.Linq.Expressions;
 
-namespace FluxoCaixa.Tests.TestUtil
+namespace FluxoCaixa.Tests.Fixture
 {
     internal class TestDbAsyncQueryProvider<TEntity> : IDbAsyncQueryProvider
     {
