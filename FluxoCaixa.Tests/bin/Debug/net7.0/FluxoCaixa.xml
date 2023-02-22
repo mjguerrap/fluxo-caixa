@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FluxoCaixa</name>
+    </assembly>
+    <members>
+        <member name="T:FluxoCaixa.Migrations.CatalogoInicial">
+            <inheritdoc />
+        </member>
+        <member name="M:FluxoCaixa.Migrations.CatalogoInicial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluxoCaixa.Migrations.CatalogoInicial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FluxoCaixa.Migrations.CatalogoInicial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

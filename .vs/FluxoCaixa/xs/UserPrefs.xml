@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{D1A43F44-E1BA-4263-8A44-5E03075FEF3C}|Default">
+  <MonoDevelop.Ide.ItemProperties.FluxoCaixa PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FluxoCaixa.Tests/Servicos/ConsolidadoServiceTeste_ObtemConsolidadoDeve.cs">
+    <Files>
+      <File FileName="FluxoCaixa.Tests/Servicos/ConsolidadoServiceTeste_ObtemConsolidadoDeve.cs" Line="30" Column="1" />
+      <File FileName="FluxoCaixa/DB/FluxoCaixaDB.cs" Line="5" Column="26" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FluxoCaixa" expanded="True">
+            <Node name="FluxoCaixa" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+              </Node>
+              <Node name="DB" expanded="True">
+                <Node name="FluxoCaixaDB.cs" selected="True" />
+              </Node>
+              <Node name="Dominio" expanded="True" />
+            </Node>
+            <Node name="FluxoCaixa.Tests" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Servicos" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="FluxoCaixa" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
