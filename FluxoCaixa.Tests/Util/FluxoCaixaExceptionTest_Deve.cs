@@ -1,5 +1,5 @@
 using FluentAssertions;
-using FluxoCaixa.Util;
+using FluxoCaixa.AppUtil;
 using System.Runtime.Serialization;
 
 namespace FluxoCaixa.Tests.Util;

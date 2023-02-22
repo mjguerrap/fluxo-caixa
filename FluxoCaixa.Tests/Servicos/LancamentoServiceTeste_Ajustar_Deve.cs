@@ -2,7 +2,7 @@ using Moq;
 using FluxoCaixa.Tests.Fixture;
 using FluxoCaixa.Dominio;
 using FluentAssertions;
-using FluxoCaixa.Util;
+using FluxoCaixa.AppUtil;
 
 namespace FluxoCaixa.Tests.Servicos;
 

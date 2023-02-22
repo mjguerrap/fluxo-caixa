@@ -3,7 +3,7 @@ using FluentAssertions;
 using FluxoCaixa.Tests.Fixture;
 using FluxoCaixa.Dominio;
 using FluxoCaixa.Servicos;
-using FluxoCaixa.Util;
+using FluxoCaixa.AppUtil;
 
 namespace FluxoCaixa.Tests.Servicos;
 

@@ -1,5 +1,5 @@
-using FluxoCaixa.Extentions;
-using FluxoCaixa.Util;
+using FluxoCaixa.AppExtentions;
+using FluxoCaixa.AppUtil;
 namespace FluxoCaixa;
 
 public class Program

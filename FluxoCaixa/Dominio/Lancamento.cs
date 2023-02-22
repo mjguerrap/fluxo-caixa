@@ -1,5 +1,5 @@
 using System.Text;
-using FluxoCaixa.Util;
+using FluxoCaixa.AppUtil;
 
 namespace FluxoCaixa.Dominio;
 
