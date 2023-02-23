@@ -12,7 +12,7 @@ public class ConsolidadoServiceTeste_ObtemConsolidadoDeve : LancamentosFixture
     {
         //Arrange
         SetupData();
-        FluxoCaixaContextMock.Setup(x => x.Database.CanConnect()).Returns(false);
+        FluxoCaixaContextMock!.Setup(x => x.Database.CanConnect()).Returns(false);
         // Act
         var result = await ConsolidadoService!.ObtemConsolidado(2, 2023)!;
 
