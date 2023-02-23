@@ -4,8 +4,6 @@
 
 ## 1. Desenho da solução
 
-___
-
 ### Objetivo do contexto
 
 > O objetivo da visão geral é dar aos stakeholders um panorama bastante sucinto das principais iterações e sistemas envolvidos, nesta visão, são abstraídas toda e qualquer referência à componentes e/ou código, é uma visão do sistema e suas iterações.
@@ -19,8 +17,6 @@ ___
 
 ## 1.2 Visão do container (Composição do Sistema)
 
-___
-
 ### Objetivo do container
 
 > O objetivo é colocar uma aproximação de como o sistema é composto, abstraindo sistemas externos e focando em como implementar corretamente e de forma objetiva todos os componentes que serão fabricados, abstraindo os componentes de terceiros e/ou frameworks.
@@ -33,8 +29,6 @@ ___
 *Imagem 01: Visão Geral do Sistema*
 
 ## 1.2 Visão do componente (Componentização do Sistema)
-
-___
 
 ### Objetivo do componente
 
