@@ -4,7 +4,7 @@
 
 ### Menu
 
-[1.1 Desenho da solução](#11-desenho-da-solução)
+[1.1 Desenho da solução]{#11-desenho-da-solução)
 [1.2 Visão do container](#12-visão-do-componente-componentização-do-sistema)
 [1.3 Visão do componente](#13-visão-do-componente-componentização-do-sistema)
 
@@ -21,7 +21,7 @@
 ![Contexto do sistema - Microserviço](/Documentacao/Img/C4-SistemaFluxoCaixaContext.png "Contexto do Sistema - Microserviço")
 *Imagem 01: Visão Geral do Sistema*
 
-## 1.2 Visão do container (Composição do Sistema) {#12-visão-do-componente-componentização-do-sistema}
+## 1.2 Visão do container (Composição do Sistema){#12-visão-do-componente-componentização-do-sistema}
 
 ### Objetivo do container
 
@@ -34,7 +34,7 @@
 ![Contexto do sistema - Microserviço](/Documentacao/Img/C4-SistemaFluxoCaixaContainer.png "Contexto do Sistema - Microserviço")
 *Imagem 02: Visão Geral do Sistema*
 
-## 1.3 Visão do componente (Componentização do Sistema) {#13-visão-do-componente-componentização-do-sistema}
+## 1.3 Visão do componente (Componentização do Sistema){#13-visão-do-componente-componentização-do-sistema}
 
 ### Objetivo do componente
 
