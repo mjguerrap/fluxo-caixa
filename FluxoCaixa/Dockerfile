@@ -3,6 +3,7 @@ WORKDIR /app
 EXPOSE 50965
 
 ENV ASPNETCORE_URLS=http://+:50965
+ENV ASPNETCORE_URLS=http://+:50965
 
 # Creates a non-root user with an explicit UID and adds permission to access the /app folder
 # For more info, please refer to https://aka.ms/vscode-docker-dotnet-configure-containers
@@ -22,5 +23,6 @@ RUN dotnet publish "FluxoCaixa.csproj" -c Release -o /app/publish /p:UseAppHost=
 
 FROM base AS final
 WORKDIR /app
+COPY ../Database .
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "FluxoCaixa.dll"]
