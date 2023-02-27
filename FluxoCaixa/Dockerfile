@@ -13,6 +13,8 @@ USER appuser
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 COPY ["FluxoCaixa/FluxoCaixa.csproj", "FluxoCaixa/"]
+COPY ["Database/FluxoCaixa.db", "Database/"]
+
 RUN dotnet restore "FluxoCaixa/FluxoCaixa.csproj"
 COPY . .
 WORKDIR "/src/FluxoCaixa"
@@ -23,6 +25,6 @@ RUN dotnet publish "FluxoCaixa.csproj" -c Release -o /app/publish /p:UseAppHost=
 
 FROM base AS final
 WORKDIR /app
-COPY ../Database .
+
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "FluxoCaixa.dll"]
