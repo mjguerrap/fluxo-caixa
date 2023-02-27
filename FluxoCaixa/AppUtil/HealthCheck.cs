@@ -10,20 +10,21 @@ public class HealthCheck : IHealthCheck
         _fluxoCaixaDb = fluxoCaixaDB;
     }
 
-    public Task<HealthCheckResult> CheckHealthAsync(
+    public async Task<HealthCheckResult> CheckHealthAsync(
         HealthCheckContext context, CancellationToken cancellationToken = default)
     {
-        var isHealthy = _fluxoCaixaDb.Database.CanConnect();
+        bool isHealthy = _fluxoCaixaDb.Database?.CanConnect() ?? false;
 
       
         if (isHealthy)
         {
-            return Task.FromResult(
-                HealthCheckResult.Healthy("A healthy result."));
+            return await Task.FromResult(
+                HealthCheckResult.Healthy("Healty"));
         }
+       
 
-        return Task.FromResult(
-            new HealthCheckResult(
-                context.Registration.FailureStatus, "An unhealthy result."));
+        return await Task.FromResult(
+            HealthCheckResult.Unhealthy("Unhealth"));
+            
     }
 }

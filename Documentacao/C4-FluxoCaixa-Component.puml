@@ -1,0 +1,30 @@
+@startuml C4_Elements
+    !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+    !define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
+    !define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
+    ' uncomment the following line and comment the first to use locally
+    ' !include C4_Container.puml
+    !include DEVICONS/angular.puml
+    !include DEVICONS/dotnet.puml
+    !include DEVICONS/java.puml
+    !include DEVICONS/sqllite.puml
+    !include FONTAWESOME/server.puml
+    !include FONTAWESOME/envelope.puml
+
+    ' LAYOUT_TOP_DOWN()
+    ' LAYOUT_AS_SKETCH()
+    LAYOUT_WITH_LEGEND()
+    SHOW_PERSON_OUTLINE()
+ 
+ 
+    System_Boundary(web_api, "FluxoCaixa") {    
+        Container(spas, "SPA", "angular ou react ou ...", "(Implementação futura) Interface principal que irá consumir as APIs")
+        Container(sso, "SSO", "Federations", "(Implementação futura) Unico ponto de autenticação e/ou Federações confiaveis como Google/Facebook e outros, podendo também ser Azure AD/Amazon Cognito")
+        System(microservico_fluxo_caixa, "Microserviço Fluxo de caixa (Dotnet Core 7)", "(MVP Implementado) Microservico que permite a gestão do fluxo de caixa, e a visão do seu consolidado", "dotnet")
+    }   
+
+
+    Rel(spas, microservico_fluxo_caixa, "controla através do", "FLUXO DE CAIXA")
+    Rel(spas, sso, "requisita autenticacao se não autenticado ou expirado", "FLUXO DE CAIXA")
+    SHOW_LEGEND()
+@enduml

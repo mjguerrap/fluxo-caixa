@@ -13,7 +13,7 @@ public class ApplicationLancamentoFixture : WebApplicationFactory<Lancamento>
        builder.ConfigureServices(services =>
        {
            services.AddScoped<ILancamentoService, LancamentoServiceFixture>();
-       });
+       });      
 
        return base.CreateHost(builder);
    }

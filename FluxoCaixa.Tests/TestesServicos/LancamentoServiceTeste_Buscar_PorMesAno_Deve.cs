@@ -19,6 +19,19 @@ public class LancamentoServiceTeste_Buscar_PorMesAno_Deve : LancamentosFixture
         result.Count.Should().BeGreaterThan(0);
     }
 
+     [Fact]
+    public async Task Dado_BuscarLancamentoPorMesAno_Quando_LancamentosEncontradosEpaginacaoZero_Entao_LancamentosEhRetornado()
+    {       
+        //Adjust
+        SetupData();
+        //FluxoCaixaContextMock!.SetupSequence(x => x.Set<Lancamento>()).ReturnsDbSet(Lancamentos);
+        // Act
+        var result = await LancamentoService!.Buscar(2, 2023, 0)!;
+        // Assert
+        FluxoCaixaContextMock!.Verify(mock => mock.Lancamentos, Times.Exactly(1));
+        result.Count.Should().BeGreaterThan(0);
+    }
+
     [Fact]
     public async Task Dado_BuscarLancamentoPorMesAno_Quando_LancamentoNaoEncontrado_Entao_RetornaListaVazia()
     {

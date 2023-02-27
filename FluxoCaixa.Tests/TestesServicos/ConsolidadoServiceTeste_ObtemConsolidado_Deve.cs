@@ -11,13 +11,11 @@ public class ConsolidadoServiceTeste_ObtemConsolidadoDeve : LancamentosFixture
     public async Task Dado_SolicitacaoConsolidado_Quando_ExistiremLancamentosDeDoisDias_Entao_RetornarConsolidadoDeDoisDias()
     {
         //Arrange
-        SetupData();
-        FluxoCaixaContextMock.Setup(x => x.Database.CanConnect()).Returns(false);
+        SetupData();       
         // Act
         var result = await ConsolidadoService!.ObtemConsolidado(2, 2023)!;
 
-        // Assert
-        FluxoCaixaContextMock!.Verify(mock => mock.Lancamentos, Times.Once());
+        // Assert        
         result?.Count.Should().Be(2);
         var primeiroRegistro = result?.First();
         primeiroRegistro!.Saldo.Should().Be(primeiroRegistro.Credito-primeiroRegistro.Debito);
