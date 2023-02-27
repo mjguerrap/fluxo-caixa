@@ -1,4 +1,5 @@
 # fluxo-caixa
-Projeto usado para participar de testes tecnicos
 
-image.png
+## Projeto teste técnico (SOLUÇÃO)
+
+## [Como rodar 🔨](/Documentacao/md/DesenhoSolucao.md) | [Desenho 📚](/Documentacao/md/DesenhoSolucao.md))

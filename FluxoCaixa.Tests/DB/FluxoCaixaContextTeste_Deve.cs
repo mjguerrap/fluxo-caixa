@@ -13,9 +13,7 @@ public class FluxoCaixaContextTeste_Deve {
         options = builder.Options;
         var dataBaseContext = new FluxoCaixaContext(options);
 
-        dataBaseContext.ContextId.Should().BeOfType<DbContextId>();
-        
-    }
-
-    
+        dataBaseContext.ContextId.Should().BeOfType<DbContextId>();   
+        dataBaseContext.Database.CanConnect();     
+    }    
 }

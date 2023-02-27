@@ -1,15 +1,26 @@
 @startuml C4_Elements
     !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+    !define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
+    !define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
 
+    !include DEVICONS/angular.puml
+    !include DEVICONS/dotnet.puml
+    !include DEVICONS/java.puml
+    !include DEVICONS/sqllite.puml
+    !include FONTAWESOME/server.puml
+    !include FONTAWESOME/envelope.puml
+
+    LAYOUT_WITH_LEGEND()
+    SHOW_PERSON_OUTLINE()
     Person(comerciante, "Comerciante", "Gestor do comércio")
-    Container(spa_angular, "SPA", "angular ou react etc", "Interface principal que irá consumir as APIs")
-    Container(sso, "SSO", "Federations", "Unico ponto de autenticação e/ou Federações confiaveis como Google/Facebook e outros, podendo também ser Azure AD/Amazon Cognito ")
+   
+  
     
     System_Boundary(web_api, "FluxoCaixa") {    
-        System(microservico_fluxo_caixa, "Microserviço Fluxo de caixa", "Microservico que permite a gestão do fluxo de caixa, e a visão do seu consolidado.")
+        System(sistema_fluxo_caixa, "Sistema Fluxo de caixa", "(MVP Implementado) Sistema que permite a gestão do fluxo de caixa, e a visão do seu consolidado", "dotnet")
     }   
 
-    Rel(comerciante, spa_angular, "controla através do", "FLUXO DE CAIXA")
-    Rel(spa_angular, microservico_fluxo_caixa, "controla através do", "FLUXO DE CAIXA")
+
+    Rel(comerciante, sistema_fluxo_caixa, "controla através do", "FLUXO DE CAIXA")
     SHOW_LEGEND()
 @enduml
