@@ -2,7 +2,7 @@ using FluxoCaixa.AppUtil;
 using Microsoft.AspNetCore.Diagnostics;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace FluxoCaixa.AppExtentions;
+namespace FluxoCaixa.AppSetup;
 
 public static class ApiExceptionHandler
 {

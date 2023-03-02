@@ -1,4 +1,4 @@
-namespace FluxoCaixa.AppExtentions;
+namespace FluxoCaixa.AppSetup;
 
 public static class AppUseSwagger
 {

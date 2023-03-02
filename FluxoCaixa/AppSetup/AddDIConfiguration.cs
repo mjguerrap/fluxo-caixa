@@ -1,6 +1,6 @@
 using FluxoCaixa.Servicos;
 
-namespace FluxoCaixa.AppExtentions;
+namespace FluxoCaixa.AppSetup;
 
 public static class AddDIConfiguration
 {

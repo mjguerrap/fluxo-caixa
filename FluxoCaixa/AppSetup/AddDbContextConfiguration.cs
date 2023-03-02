@@ -1,7 +1,7 @@
 using FluxoCaixa.DBContext;
 using Microsoft.EntityFrameworkCore;
 
-namespace FluxoCaixa.AppExtentions;
+namespace FluxoCaixa.AppSetup;
 
 public static class AddDbContextConfiguration
 {
