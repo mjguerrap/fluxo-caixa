@@ -4,7 +4,7 @@ using FluxoCaixa.Model;
 using FluxoCaixa.Servicos;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace FluxoCaixa.AppExtentions
+namespace FluxoCaixa.AppSetup
 {
     public static class ApiMapping
     {

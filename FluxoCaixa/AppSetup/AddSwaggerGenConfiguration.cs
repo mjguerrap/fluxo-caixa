@@ -1,7 +1,7 @@
 using System.Reflection;
 using Microsoft.OpenApi.Models;
 
-namespace FluxoCaixa.AppExtentions;
+namespace FluxoCaixa.AppSetup;
 
 public static class AddSwaggerGenConfiguration
 {

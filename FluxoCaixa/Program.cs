@@ -1,4 +1,4 @@
-using FluxoCaixa.AppExtentions;
+using FluxoCaixa.AppSetup;
 using FluxoCaixa.AppUtil;
 
 namespace FluxoCaixa;
