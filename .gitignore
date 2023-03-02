@@ -40,4 +40,4 @@ msbuild.wrn
 coveragereport/
 
 # Folder used only for development proposes
-# FluxoCaixa/Database/
+FluxoCaixa/Database/
