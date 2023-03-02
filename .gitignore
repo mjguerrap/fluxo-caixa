@@ -36,4 +36,8 @@ msbuild.wrn
 # Visual Studio Code
 .vscode
 
+# Code coverage folder
 coveragereport/
+
+# Folder used only for development proposes
+FluxoCaixa/Database/
