@@ -38,6 +38,8 @@ msbuild.wrn
 
 # Code coverage folder
 coveragereport/
+coverage*.*
 
 # Folder used only for development proposes
 FluxoCaixa/Database/
+

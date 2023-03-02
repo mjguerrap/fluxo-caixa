@@ -26,19 +26,21 @@ public class Program
         builder.Services.AddDependencyInjection();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddCustomSwaggerGen();
-
+        builder.Logging.ClearProviders();
+        builder.Logging.AddConsole();
         builder.Services.AddCustomCors(out myAllowSpecificOrigins);
     }
 
     static void AppStart(WebApplicationBuilder builder, string myAllowSpecificOrigins)
-    {
-        var app = builder.Build();
+    {        
+        var app = builder.Build();        
         app.AddCustomExceptionHandler();
         app.UseSwaggerConfiguration();
 
         app.UseCors(myAllowSpecificOrigins);
         app.MapHealthChecks("/HealthCheck");
         app.APIMapping();
+        app.Logger.LogInformation("Starting the app");
         app.Run();
     }
 }
