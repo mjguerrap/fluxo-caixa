@@ -1,7 +1,7 @@
 using FluxoCaixa.AppUtil;
 using Microsoft.AspNetCore.Diagnostics;
 using static System.Net.Mime.MediaTypeNames;
-
+using System.Text.Json;
 namespace FluxoCaixa.AppSetup;
 
 public static class ApiExceptionHandler
@@ -21,10 +21,17 @@ public static class ApiExceptionHandler
             if (exceptionHandlerPathFeature?.Error is FluxoCaixaException)
             {
                 await context.Response.WriteAsync(exceptionHandlerPathFeature.Error.Message);
+                app.Logger.LogWarning(exceptionHandlerPathFeature.Error.Message);
             }
             else
             {
                 await context.Response.WriteAsync("Algo de errado aconteceu, favor tentar novamente mais tarde, se o problema persistir, entre em contato com o suporte.");
+                var exception = JsonSerializer.Serialize(new {
+                    Message = exceptionHandlerPathFeature?.Error?.Message,
+                    InnerException = exceptionHandlerPathFeature?.Error?.InnerException,
+                    StackTrace =  exceptionHandlerPathFeature?.Error?.StackTrace,
+                });
+                app.Logger.LogError($"Erro inexperado: {exception}");
             }          
         });
     });
