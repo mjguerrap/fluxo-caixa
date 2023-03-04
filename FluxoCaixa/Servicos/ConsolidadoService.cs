@@ -6,12 +6,12 @@ namespace FluxoCaixa.Servicos;
 
 public class ConsolidadoService : IConsolidadoService
 {
-    private readonly FluxoCaixaContext _fluxoCaixaDb;
+    private readonly FluxoCaixaContext fluxoCaixaDb;
 
-    public ConsolidadoService(FluxoCaixaContext fluxoCaixaDb) => _fluxoCaixaDb = fluxoCaixaDb;
+    public ConsolidadoService(FluxoCaixaContext fluxoCaixaDb) => this.fluxoCaixaDb = fluxoCaixaDb;
     public async Task<ICollection<Consolidado>> ObtemConsolidado(int mes, int ano)
     {
-        var lancamentos = await _fluxoCaixaDb.Lancamentos.Where( x => x.Data.Month == mes && x.Data.Year == ano).ToListAsync();
+        var lancamentos = await fluxoCaixaDb.Lancamentos.Where( x => x.Data.Month == mes && x.Data.Year == ano).ToListAsync();
         var retorno = lancamentos.GroupBy(l => l.Data)
         .Select(x => new Consolidado{
             Data = x.First().Data,

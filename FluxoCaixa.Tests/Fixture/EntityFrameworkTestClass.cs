@@ -5,11 +5,11 @@ namespace FluxoCaixa.Tests.Fixture
 {
     internal class TestDbAsyncQueryProvider<TEntity> : IDbAsyncQueryProvider
     {
-        private readonly IQueryProvider _inner;
+        private readonly IQueryProvider inner;
 
         internal TestDbAsyncQueryProvider(IQueryProvider inner)
         {
-            _inner = inner;
+            this.inner = inner;
         }
 
         public IQueryable CreateQuery(Expression expression)
@@ -24,12 +24,12 @@ namespace FluxoCaixa.Tests.Fixture
 
         public object? Execute(Expression expression)
         {
-            return _inner.Execute(expression);
+            return inner.Execute(expression);
         }
 
         public TResult Execute<TResult>(Expression expression)
         {
-            return _inner.Execute<TResult>(expression);
+            return inner.Execute<TResult>(expression);
         }
 
         public Task<object?> ExecuteAsync(Expression expression, CancellationToken cancellationToken)
@@ -71,26 +71,26 @@ namespace FluxoCaixa.Tests.Fixture
 
     internal class TestDbAsyncEnumerator<T> : IDbAsyncEnumerator<T>
     {
-        private readonly IEnumerator<T> _inner;
+        private readonly IEnumerator<T> inner;
 
         public TestDbAsyncEnumerator(IEnumerator<T> inner)
         {
-            _inner = inner;
+            this.inner = inner;
         }
 
         public void Dispose()
         {
-            _inner.Dispose();
+            inner.Dispose();
         }
 
         public Task<bool> MoveNextAsync(CancellationToken cancellationToken)
         {
-            return Task.FromResult(_inner.MoveNext());
+            return Task.FromResult(inner.MoveNext());
         }
 
         public T Current
         {
-            get { return _inner.Current; }
+            get { return inner.Current; }
         }
 
         object? IDbAsyncEnumerator.Current
