@@ -25,7 +25,7 @@ Esta solução foi desenvolvida utilizando:
 
 **Obs:** _**Esta solução é apenas Backend**_, a solução com o Frontend pode ser desenvolvida futuramente, a idéia é desenvolver o front em diversos frameworks e linguagens, como Angular, React, Vue e também Mobile (Nativo ou não);
 
-### Algumas observações importantes :information_source:
+### Algumas observações importantes :information_source
 
 1) Problema a ser resolvido;
    1) Controlar o fluxo de caixa diário;
@@ -47,6 +47,7 @@ Esta solução foi desenvolvida utilizando:
 3) Como não foi comentado qual tipo de acesso deveria ser implementado, a parte de Autenticação e Autorização ficou de fora dessa implementação
 
 ### Pontos importantes que ficaram de fora, mas são importantes para uma solução real
+
 - Segurança;
   - Autenticação;
   - Autorização;
