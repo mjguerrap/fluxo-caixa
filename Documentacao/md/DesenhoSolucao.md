@@ -1,3 +1,5 @@
+## [Como rodar 🔨](/Documentacao/md/ComoRodar.md) | [Desenho 📚]
+
 # Desenho da solução
 
 ## 1 Visão contexto
