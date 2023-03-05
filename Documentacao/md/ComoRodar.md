@@ -1,6 +1,6 @@
 # Como baixar :arrow_down: e rodar a solução :running
 
-## [Como rodar 🔨] | [Desenho 📚](/Documentacao/md/DesenhoSolucao.md)
+## [Readme](https://github.com/mjguerrap/fluxo-caixa/README.md) | [Como rodar 🔨] | [Desenho 📚](/Documentacao/md/DesenhoSolucao.md)
 
 ## Baixar o projeto
 
