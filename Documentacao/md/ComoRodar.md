@@ -27,29 +27,31 @@ Geral - Configuração
 - Configurar appsettings.Development.json e/ou appseting.json com o caminho que pode ser **absoluto (Para rodar no Docker só pode ser absoluto)** ou relativo de onde o arquivo FluxoCaixa.db foi colocado;
 - Colocar FluxoCaixa.csproj como startup project
 
-1) Através do debug do Visual Studio
-   - Executar a configuração descrita acima
-   - Rodar a aplicação pelo Visual Studio Debug
-   - Observar a porta que a Api deu start, a porta que foi configurada no projeto é a 50965 e ajustar o link abaixo:
+A) Através do debug do Visual Studio
+
+- Executar a configuração descrita acima
+- Rodar a aplicação pelo Visual Studio Debug
+- Observar a porta que a Api deu start, a porta que foi configurada no projeto é a 50965 e ajustar o link abaixo:
   
 ```uri
    http://localhost:[PORTA DO START]/swagger/index.html
 ```
 
-2) Através da linha de comando
-   - Executar a configuração descrita acima
-   - Navegar para a pasta onde encontra-se o projeto FluxoCaixa
-   - Executar a linha de comando abaixo
+B) Através da linha de comando
+
+- Executar a configuração descrita acima
+- Navegar para a pasta onde encontra-se o projeto FluxoCaixa
+- Executar a linha de comando abaixo
 
 ```cmd
     dotnet run
 ```
 
-3) Rodando através de container
-   - Copiar o arquivo do banco FluxoCaixa.db para uma pasta em seu computador
-   - Rodar o comando abaixo substituindo [PATH ABSOLUTO] em "src" pelo caminho que o seu arquivo foi colocado no seu computador e [PORTA] em "-dp" por uma porta disponível em seu computador
+C) Rodando através de container
+
+- Copiar o arquivo do banco FluxoCaixa.db para uma pasta em seu computador
+- Rodar o comando abaixo substituindo [PATH ABSOLUTO] em "src" pelo caminho que o seu arquivo foi colocado no seu computador e [PORTA] em "-dp" por uma porta disponível em seu computador
   
 ```cmd
 docker run --mount type=bind,src=[PATH ABSOLUTO],target=/Database -dp [PORTA]:50965  mjguerrap/fluxocaixateste --name fluxocaixa
 ```
-
