@@ -1,4 +1,4 @@
-## [Sobre o Teste :mega:](Readme.md) | [Como rodar 🔨] | [Desenho 📚](/Documentacao/md/DesenhoSolucao.md)
+## [Como rodar 🔨] | [Desenho 📚](/Documentacao/md/DesenhoSolucao.md)
 # Como baixar :arrow_down: e rodar a solução :running
 
 ## Baixar o projeto
