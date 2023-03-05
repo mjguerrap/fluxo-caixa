@@ -1,6 +1,6 @@
 # Como baixar :arrow_down: e rodar a solução :running
 
-## [Como rodar 🔨] | [Desenho 📚](/Documentacao/md/DesenhoSolucao.md)
+## [Sobre o teste :mega:](https://github.com/mjguerrap/fluxo-caixa) | [Como rodar 🔨] | [Desenho 📚](/Documentacao/md/DesenhoSolucao.md)
 
 ## Baixar o projeto
 
