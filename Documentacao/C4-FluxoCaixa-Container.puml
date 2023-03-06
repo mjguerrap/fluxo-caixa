@@ -31,10 +31,11 @@
     }   
 
     Rel(comerciante, spas, "controla através do", "FLUXO DE CAIXA")
-    Rel(spas, microservico_fluxo_caixa, "controla através do", "FLUXO DE CAIXA")
+    Rel(comerciante, mobile_app, "controla através do", "FLUXO DE CAIXA")
+    Rel(spas, microservico_fluxo_caixa, "Requisita", "API")
     Rel(spas, sso, "requisita autenticacao se não autenticado ou expirado", "FLUXO DE CAIXA")
     Rel(mobile_app, sso, "requisita autenticacao se não autenticado ou expirado", "FLUXO DE CAIXA")
-    Rel(mobile_app, microservico_fluxo_caixa, "controla através do", "FLUXO DE CAIXA")
+    Rel(mobile_app, microservico_fluxo_caixa, "Requisita", "API")
     Rel(microservico_fluxo_caixa, database, "controla através do", "FLUXO DE CAIXA")
     SHOW_LEGEND()
 @enduml
