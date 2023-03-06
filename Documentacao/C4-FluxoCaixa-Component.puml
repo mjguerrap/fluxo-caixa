@@ -1,5 +1,5 @@
 @startuml C4_Elements
-    !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+    !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
     !define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
     !define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
     ' uncomment the following line and comment the first to use locally
@@ -14,17 +14,42 @@
     ' LAYOUT_TOP_DOWN()
     ' LAYOUT_AS_SKETCH()
     LAYOUT_WITH_LEGEND()
-    SHOW_PERSON_OUTLINE()
- 
- 
-    System_Boundary(web_api, "FluxoCaixa") {    
-        Container(spas, "SPA", "angular ou react ou ...", "(Implementação futura) Interface principal que irá consumir as APIs")
-        Container(sso, "SSO", "Federations", "(Implementação futura) Unico ponto de autenticação e/ou Federações confiaveis como Google/Facebook e outros, podendo também ser Azure AD/Amazon Cognito")
-        System(microservico_fluxo_caixa, "Microserviço Fluxo de caixa (Dotnet Core 7)", "(MVP Implementado) Microservico que permite a gestão do fluxo de caixa, e a visão do seu consolidado", "dotnet")
+    SHOW_PERSON_OUTLINE()    
+    AddBoundaryTag("v1", $bgColor="lightgreen", $fontColor="green", $borderColor="green")
+    AddBoundaryTag("v2", $bgColor="lightgray", $fontColor="red", $borderColor="red")
+    Container_Boundary(solution, "FluxoCaixa") {  
+        Boundary(to_implement, "Não implementado", $type="Frontend Web/Mobile", $tags="v2") {  
+            Container(spas, "Single-Page App", "angular ou react ou ...", "(Implementação futura) Interface principal Web que irá consumir as APIs")
+            Container(mobile_app, "Mobile", "Xamarim", "(Implementação futura) Interface principal Mobile que irá consumir as APIs")
+        }
+        Boundary(to_implement2, "Não implementado", $type="SSO/Security", $tags="v2") {  
+            Component(ssoApi, "SSO API", "Federations", "(Implementação futura) Permite ao usuário logar no Sistema")
+            Component(ssoSecurity, "SSO Security", "Federations", "(Implementação futura) Provê funcionalidades relacionadas ao login, mudanças de sente dentre outras")
+        }
+        Boundary(web_api, "Concluído", $type="Backend Web API", $tags="v1") {  
+            Component(consolidados, "Consolidados API", "Rest Minimal API", "Provê consolidados de caixa diários dos movimentos efetuados em um determinado mês/ano referência")
+            Component(lancamentos, "Lancamentos API", "Rest Minimal API", "Perminte a manutenção dos lançamentos do caixa de um determinado dia, também permite listar os lançamentos de um determinado mês/ano referência")
+            Component(appService, "Serviço de aplicativo", "Service layer", "Camada gestora dos serviços consumidos pela API")
+            Component(domain, "Domínio do negócio", "Domain layer", "Camada responsável por deter a implementação das classes e regras de domínio da solução")
+            Component(efCore, "Repository", "Repository layer", "Camada de abstração entre a aplicação e o banco de dados")
+        }
     }   
-
-
-    Rel(spas, microservico_fluxo_caixa, "controla através do", "FLUXO DE CAIXA")
-    Rel(spas, sso, "requisita autenticacao se não autenticado ou expirado", "FLUXO DE CAIXA")
+    ContainerDb(databaseFC, "Database", "SQLLite Database", "Registra os lançamentos do fluxo de caixa em um banco relacional","sqllite")
+    Boundary(to_implement3, "Não implementado", $type="SSO/Security Database", $tags="v2") {  
+        ContainerDb(databaseSSO, "Database", "DB não definido", "Define as funcionalidades de acesso, autenticação e autorização.")
+    }
+    Rel(spas, consolidados, "utiliza", "JSON/HTTPS")
+    Rel(spas, ssoApi, "utiliza", "JSON/HTTPS")
+    Rel(spas, lancamentos, "utiliza", "JSON/HTTPS")
+    Rel(mobile_app, ssoApi, "utiliza", "JSON/HTTPS")
+    Rel(mobile_app, lancamentos, "utiliza", "JSON/HTTPS")
+    Rel(mobile_app, consolidados, "utiliza", "JSON/HTTPS")
+    Rel(consolidados, appService, "Utiliza")
+    Rel(appService, domain, "Utiliza")
+    Rel(lancamentos, appService, "Utiliza")
+    Rel(appService, efCore, "Utiliza")
+    Rel(efCore, databaseFC, "Leitura e gravação", "SGDB")
+    Rel(ssoApi, ssoSecurity, "Utiliza")
+    Rel(ssoSecurity, databaseSSO, "Leitura e gravação", "SGDB")
     SHOW_LEGEND()
 @enduml

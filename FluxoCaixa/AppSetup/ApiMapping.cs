@@ -17,7 +17,7 @@ namespace FluxoCaixa.AppSetup
 
             app.MapGet("/", () => "Apresentação do Teste sobre Fluxo de Caixa!");    
             
-            app.MapGet("/consolidado", async (IConsolidadoService cs, int mes, int ano) => await cs.ObtemConsolidado(mes, ano))
+            app.MapGet("/consolidados", async (IConsolidadoService cs, int mes, int ano) => await cs.ObtemConsolidado(mes, ano))
             .WithApiVersionSet(versionSet).MapToApiVersion(1.0);         
             
             app.MapGet("/lancamentos", async (ILancamentoService ls, int mes, int ano, int pagina) => {
