@@ -1,4 +1,4 @@
-# Como baixar :arrow_down: e rodar a solução :running
+# :arrow_down: :running: Como baixar  e rodar a solução
 
 ## [Sobre o teste :mega:](https://github.com/mjguerrap/fluxo-caixa) | [Como rodar 🔨] | [Desenho 📚](/Documentacao/md/DesenhoSolucao.md)
 

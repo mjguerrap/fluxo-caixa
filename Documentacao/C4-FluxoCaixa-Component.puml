@@ -40,7 +40,9 @@
     }
     Rel(spas, consolidados, "utiliza", "JSON/HTTPS")
     Rel(spas, ssoApi, "utiliza", "JSON/HTTPS")
+    Rel(spas, lancamentos, "utiliza", "JSON/HTTPS")
     Rel(mobile_app, ssoApi, "utiliza", "JSON/HTTPS")
+    Rel(mobile_app, lancamentos, "utiliza", "JSON/HTTPS")
     Rel(mobile_app, consolidados, "utiliza", "JSON/HTTPS")
     Rel(consolidados, appService, "Utiliza")
     Rel(appService, domain, "Utiliza")
