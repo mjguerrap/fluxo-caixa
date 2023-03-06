@@ -23,7 +23,7 @@ Esta solução foi desenvolvida utilizando:
 - Report Coverage (Framework)
 - Docker para rodar a aplicação
 
-> _**Repository pattern**_ - **Importante** 
+> _**Repository pattern**_ - **Importante**
 > Quero aqui salientar que, o padrão **Repositório** é muito importante, sua finalidade é criar uma camada de abstração entre a camada da aplicação e o banco de dados, os mais atentos conseguirão perceber que "não existe" uma abstração "Repository pattern" implementada de forma explícita neste projeto teste, isso ocorre por uma decisão única e exclusiva minha, e a explicação que posso dar é que o **EF Core** já é uma camada de abstração do banco de dados, e criar o Repository para este projeto pequeno seria criar uma _**ABSTRAÇÃO da ABSTRAÇÃO**_, óbviamente, quando se trata de algo maior, uma **Enterprise Solution** por exemplo, tal decisão não cabe a apenas uma pessoa, como não é o caso, eu comigo mesmo decidimos por não implementar.
 ---
 > **Obs:** _**Esta solução é apenas Backend**_, a solução com o Frontend pode ser desenvolvida futuramente, a idéia é desenvolver o front em diversos frameworks e linguagens, como Angular, React, Vue e também Mobile (Nativo ou não);
