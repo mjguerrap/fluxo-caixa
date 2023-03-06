@@ -16,13 +16,18 @@
     LAYOUT_WITH_LEGEND()
     SHOW_PERSON_OUTLINE()
     Person(comerciante, "Comerciante", "Gestor do comércio")
-
-    System_Boundary(web_api, "FluxoCaixa") {     
-        Container(spas, "Single-Page App", "angular ou react ou ...", "(Implementação futura) Interface principal Web que irá consumir as APIs")
-        Container(mobile_app, "Mobile", "Xamarim", "(Implementação futura) Interface principal Mobile que irá consumir as APIs")
-        Container(sso, "SSO", "Federations", "(Implementação futura) Unico ponto de autenticação e/ou Federações confiaveis como Google/Facebook e outros, podendo também ser Azure AD/Amazon Cognito")
-        System(microservico_fluxo_caixa, "Microserviço Fluxo de caixa (Dotnet Core 7)", "(MVP Implementado) Microservico que permite a gestão do fluxo de caixa, e a visão do seu consolidado", "dotnet")
-        ContainerDb(database, "Database", "SQLLite Database", "Registra os lançamentos do fluxo de caixa em um banco relacional","sqllite")
+    AddBoundaryTag("v1", $bgColor="lightgreen", $fontColor="green", $borderColor="green")
+    AddBoundaryTag("v2", $bgColor="lightgray", $fontColor="red", $borderColor="red")
+    System_Boundary(solution, "FluxoCaixa") {  
+        Boundary(to_implement, "Não implementado", $type="Backend Web API", $tags="v2") {  
+            Container(spas, "Single-Page App", "angular ou react ou ...", "(Implementação futura) Interface principal Web que irá consumir as APIs")
+            Container(mobile_app, "Mobile", "Xamarim", "(Implementação futura) Interface principal Mobile que irá consumir as APIs")
+            Container(sso, "SSO", "Federations", "(Implementação futura) Unico ponto de autenticação e/ou Federações confiaveis como Google/Facebook e outros, podendo também ser Azure AD/Amazon Cognito")
+        }
+        Boundary(web_api, "Concluído", $type="Backend Web API", $tags="v1") {  
+            System(microservico_fluxo_caixa, "Microserviço Fluxo de caixa (Dotnet Core 7)", "(MVP Implementado) Microservico que permite a gestão do fluxo de caixa, e a visão do seu consolidado", "dotnet")
+            ContainerDb(database, "Database", "SQLLite Database", "Registra os lançamentos do fluxo de caixa em um banco relacional","sqllite")
+        }
     }   
 
     Rel(comerciante, spas, "controla através do", "FLUXO DE CAIXA")

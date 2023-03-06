@@ -25,7 +25,7 @@ Esta solução foi desenvolvida utilizando:
 
 **Obs:** _**Esta solução é apenas Backend**_, a solução com o Frontend pode ser desenvolvida futuramente, a idéia é desenvolver o front em diversos frameworks e linguagens, como Angular, React, Vue e também Mobile (Nativo ou não);
 
-### Algumas observações importantes :information_source
+### :information_source: Algumas observações importantes
 
 1) Problema a ser resolvido;
    1) Controlar o fluxo de caixa diário;
