@@ -21,17 +21,12 @@ public static class ApiExceptionHandler
             if (exceptionHandlerPathFeature?.Error is FluxoCaixaException)
             {
                 await context.Response.WriteAsync(exceptionHandlerPathFeature.Error.Message);
-                app.Logger.LogWarning(exceptionHandlerPathFeature.Error.Message);
+                app.Logger.LogWarning(exceptionHandlerPathFeature?.Error, exceptionHandlerPathFeature?.Error.Message);
             }
             else
             {
                 await context.Response.WriteAsync("Algo de errado aconteceu, favor tentar novamente mais tarde, se o problema persistir, entre em contato com o suporte.");
-                var exception = JsonSerializer.Serialize(new {
-                    Message = exceptionHandlerPathFeature?.Error?.Message,
-                    InnerException = exceptionHandlerPathFeature?.Error?.InnerException,
-                    StackTrace =  exceptionHandlerPathFeature?.Error?.StackTrace,
-                });
-                app.Logger.LogError($"Erro inexperado: {exception}");
+                app.Logger.LogError(exceptionHandlerPathFeature?.Error,$"Erro inexperado");
             }          
         });
     });
