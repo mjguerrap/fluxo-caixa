@@ -48,6 +48,7 @@ Esta solução foi desenvolvida utilizando:
        - ...
        - Muitas outras perguntas poderiam ser feitas para que não precisemos refatorar/refazer a solução
 3) Como não foi comentado qual tipo de acesso deveria ser implementado, a parte de Autenticação e Autorização ficou de fora dessa implementação
+4) Você deve estar pensando.... Mas é um monolito! Antes que você fique bravo comigo, veja o artigo de [Martin Fowler](https://martinfowler.com/bliki/MonolithFirst.html), talvez entenda a minha escolha.
 
 ### Pontos importantes que ficaram de fora, mas são importantes para uma solução real
 
