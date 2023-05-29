@@ -57,7 +57,7 @@ Esta solução foi desenvolvida utilizando:
   - Autorização;
   - Perfis de acesso;
   - Dados como string de conexão, senhas, secrets, nomes de usuário e informações sensíveis não devem estar nos repositórios da solução;
-- Payload;
+- Workload;
   - Quantidade de usuários simultaneos;
   - Volume de transações programadas;
 - Desempenho;
